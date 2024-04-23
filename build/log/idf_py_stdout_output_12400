@@ -1,0 +1,309 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15592
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 23 2024 12:24:51[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.0[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (79) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (86) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (94) boot:  3 factory          factory app      00 00 00010000 0014ccb8[0m
+[0;32mI (101) boot:  4 ota_0            OTA app          00 10 00160000 00133332[0m
+[0;32mI (109) boot:  5 ota_1            OTA app          00 11 002a0000 00133332[0m
+[0;32mI (116) boot:  6 nvs_key          NVS keys         01 04 003d4000 00001000[0m
+[0;32mI (124) boot: End of partition table[0m
+[0;32mI (128) boot: Defaulting to factory image[0m
+[0;32mI (133) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4229ch (271004) map[0m
+[0;32mI (223) esp_image: segment 1: paddr=000522c4 vaddr=3ffb0000 size=03828h ( 14376) load[0m
+[0;32mI (228) esp_image: segment 2: paddr=00055af4 vaddr=40080000 size=0a524h ( 42276) load[0m
+[0;32mI (244) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=cf588h (849288) map[0m
+[0;32mI (500) esp_image: segment 4: paddr=0012f5b0 vaddr=4008a524 size=0b0b0h ( 45232) load[0m
+[0;32mI (527) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (527) boot: Disabling RNG early entropy source...[0m
+[0;32mI (539) cpu_start: Multicore app[0m
+[0;32mI (539) cpu_start: Pro cpu up.[0m
+[0;32mI (539) cpu_start: Starting app cpu, entry point is 0x4008136c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (557) cpu_start: Pro cpu start user code[0m
+[0;32mI (557) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (557) cpu_start: Application information:[0m
+[0;32mI (562) cpu_start: Project name:     firebase-esp-idf[0m
+[0;32mI (567) cpu_start: App version:      v0.1.0-dirty[0m
+[0;32mI (573) cpu_start: Compile time:     Apr 23 2024 12:24:31[0m
+[0;32mI (579) cpu_start: ELF file SHA256:  a61af46867d858d0...[0m
+[0;32mI (585) cpu_start: ESP-IDF:          v5.1-dirty[0m
+[0;32mI (590) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (595) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (600) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (604) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (612) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (618) heap_init: At 3FFB9590 len 00026A70 (154 KiB): DRAM[0m
+[0;32mI (624) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (630) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (637) heap_init: At 400955D4 len 0000AA2C (42 KiB): IRAM[0m
+[0;32mI (644) spi_flash: detected chip: generic[0m
+[0;32mI (648) spi_flash: flash io: dio[0m
+[0;32mI (654) app_start: Starting scheduler on CPU0[0m
+[0;32mI (657) app_start: Starting scheduler on CPU1[0m
+[0;32mI (657) main_task: Started on CPU0[0m
+[0;32mI (667) main_task: Calling app_main()[0m
+[0;32mI (687) wifi station: ESP_WIFI_MODE_STA[0m
+I (697) wifi:wifi driver task: 3ffc2868, prio:23, stack:6656, core=0
+I (707) wifi:wifi firmware version: b2f1f86
+I (707) wifi:wifi certification version: v7.0
+I (707) wifi:config NVS flash: enabled
+I (707) wifi:config nano formating: disabled
+I (707) wifi:Init data frame dynamic rx buffer num: 32
+I (717) wifi:Init management frame dynamic rx buffer num: 32
+I (717) wifi:Init management short buffer num: 32
+I (727) wifi:Init dynamic tx buffer num: 32
+I (727) wifi:Init static rx buffer size: 1600
+I (737) wifi:Init static rx buffer num: 10
+I (737) wifi:Init dynamic rx buffer num: 32
+[0;32mI (737) wifi_init: rx ba win: 6[0m
+[0;32mI (747) wifi_init: tcpip mbox: 32[0m
+[0;32mI (747) wifi_init: udp mbox: 6[0m
+[0;32mI (747) wifi_init: tcp mbox: 6[0m
+[0;32mI (757) wifi_init: tcp tx win: 5744[0m
+[0;32mI (757) wifi_init: tcp rx win: 5744[0m
+[0;32mI (767) wifi_init: tcp mss: 1440[0m
+[0;32mI (767) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (777) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (777) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (867) wifi:mode : sta (94:e6:86:00:be:34)
+I (867) wifi:enable tsf
+[0;32mI (877) wifi station: wifi_init_sta finished.[0m
+I (877) wifi:new:<4,1>, old:<1,0>, ap:<255,255>, sta:<4,1>, prof:1
+I (877) wifi:state: init -> auth (b0)
+I (907) wifi:state: auth -> init (8a0)
+I (907) wifi:new:<4,0>, old:<4,1>, ap:<255,255>, sta:<4,1>, prof:1
+[0;32mI (907) wifi station: retry to connect to the AP[0m
+[0;32mI (907) wifi station: connect to the AP fail[0m
+I (917) wifi:new:<4,1>, old:<4,0>, ap:<255,255>, sta:<4,1>, prof:1
+I (917) wifi:state: init -> auth (b0)
+I (927) wifi:state: auth -> assoc (0)
+I (937) wifi:state: assoc -> run (10)
+I (977) wifi:connected with GSPL, aid = 4, channel 4, 40U, bssid = 9c:53:22:1f:b7:4e
+I (987) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
+I (987) wifi:pm start, type: 1
+
+I (1077) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (1507) wifi:<ba-add>idx:0 (ifx:0, 9c:53:22:1f:b7:4e), tid:6, ssn:2, winSize:64
+[0;32mI (2987) esp_netif_handlers: sta ip: 192.168.0.165, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (2987) wifi station: got ip:192.168.0.165[0m
+[0;33mW (2987) wifi station: connected to ap SSID: GSPL || password: GSPL@1234[0m
+I (3017) wifi:<ba-add>idx:1 (ifx:0, 9c:53:22:1f:b7:4e), tid:4, ssn:0, winSize:64
+[0;31mE (4367) FirebaseApp: Error while performing request esp_err_t code=0x0 | status_code=400[0m
+[0;31mE (4367) FirebaseApp: request: url=https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBWXNL-sxSHz0KM_9pFS7A99ZnH4zJ22i8 
+method=1 
+post_field={"email":"ashus3868@gmail.com", "password":"NLsKpfvtnawT8g5IKCiQJ00qhMooYNOgnEjiBKlm", "returnSecureToken": true}[0m
+[0;31mE (4387) FirebaseApp: response=
+{
+  "error": {
+    "code": 400,
+    "message": "EMAIL_NOT_FOUND",
+    "errors": [
+      {
+        "message": "EMAIL_NOT_FOUND",
+        "domain": "global",
+        "reason": "invalid"
+      }
+    ]
+  }
+}
+[0m
+[0;31mE (4417) FirebaseApp: Failed to get refresh token[0m
+[0;33mW (6307) HTTP_CLIENT: This request requires authentication, but does not provide header information for that[0m
+[0;31mE (6307) FirebaseApp: Error while performing request esp_err_t code=0x0 | status_code=401[0m
+[0;31mE (6317) FirebaseApp: request: url=https://esp32-iot-b4293-default-rtdb.firebaseio.com/person1.json?auth= 
+method=2 
+post_field={"name": "Madjid", "age": 20, "random_float": 8.56}[0m
+[0;31mE (6327) FirebaseApp: response=
+{
+  "error" : "Permission denied"
+}
+[0m
+[0;31mE (6337) RTDB: PUT failed[0m
+[0;33mW (6717) HTTP_CLIENT: This request requires authentication, but does not provide header information for that[0m
+[0;31mE (6717) FirebaseApp: Error while performing request esp_err_t code=0x0 | status_code=401[0m
+[0;31mE (6727) FirebaseApp: request: url=https://esp32-iot-b4293-default-rtdb.firebaseio.com/person2.json?auth= 
+method=2 
+post_field={"age":22,"name":"Tikou","random_float":4.4400000000000004}
+[0m
+[0;31mE (6737) FirebaseApp: response=
+{
+  "error" : "Permission denied"
+}
+[0m
+[0;31mE (6747) RTDB: PUT failed[0m
+[0;31mE (12997) esp-tls: couldn't get hostname for :esp32-iot-b4293-default-rtdb.firebaseio.comperson3.json: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (12997) esp-tls: Failed to open new connection[0m
+[0;31mE (12997) transport_base: Failed to open a new connection[0m
+[0;31mE (13007) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (13007) FirebaseApp: Error while performing request esp_err_t code=0x7002 | status_code=401[0m
+[0;31mE (13017) FirebaseApp: request: url=https://esp32-iot-b4293-default-rtdb.firebaseio.comperson3.json?auth= 
+method=2 
+post_field={"age":23,"name":"Lotfi","random_float":5.9500000000000002}
+[0m
+[0;31mE (13037) FirebaseApp: response=
+[0m
+[0;31mE (13047) RTDB: PUT failed[0m
+[0;31mE (19997) esp-tls: couldn't get hostname for :esp32-iot-b4293-default-rtdb.firebaseio.comperson2.json: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (19997) esp-tls: Failed to open new connection[0m
+[0;31mE (19997) transport_base: Failed to open a new connection[0m
+[0;31mE (20007) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (20007) FirebaseApp: Error while performing request esp_err_t code=0x7002 | status_code=401[0m
+[0;31mE (20017) FirebaseApp: request: url=https://esp32-iot-b4293-default-rtdb.firebaseio.comperson2.json?auth= 
+method=3 
+post_field={"age":23,"name":"Tikou","random_float":4.4400000000000004}
+[0m
+[0;31mE (20037) FirebaseApp: response=
+[0m
+[0;31mE (20047) RTDB: PATCH failed[0m
+[0;31mE (26997) esp-tls: couldn't get hostname for :esp32-iot-b4293-default-rtdb.firebaseio.comperson3.json: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (26997) esp-tls: Failed to open new connection[0m
+[0;31mE (26997) transport_base: Failed to open a new connection[0m
+[0;31mE (27007) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (27007) FirebaseApp: Error while performing request esp_err_t code=0x7002 | status_code=401[0m
+[0;31mE (27017) FirebaseApp: request: url=https://esp32-iot-b4293-default-rtdb.firebaseio.comperson3.json?auth= 
+method=0 
+post_field=[0m
+[0;31mE (27037) FirebaseApp: response=
+[0m
+[0;31mE (27037) RTDB: Error while getting data at path person3| esp_err_t=28674 | status_code=401[0m
+[0;32mI (27047) RTDB: Token expired ? Trying refreshing auth[0m
+[0;31mE (28127) FirebaseApp: Error while performing request esp_err_t code=0x0 | status_code=400[0m
+[0;31mE (28127) FirebaseApp: request: url=https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBWXNL-sxSHz0KM_9pFS7A99ZnH4zJ22i8 
+method=1 
+post_field={"email":"ashus3868@gmail.com", "password":"NLsKpfvtnawT8g5IKCiQJ00qhMooYNOgnEjiBKlm", "returnSecureToken": true}[0m
+[0;31mE (28147) FirebaseApp: response=
+{
+  "error": {
+    "code": 400,
+    "message": "EMAIL_NOT_FOUND",
+    "errors": [
+      {
+        "message": "EMAIL_NOT_FOUND",
+        "domain": "global",
+        "reason": "invalid"
+      }
+    ]
+  }
+}
+[0m
+[0;31mE (28167) FirebaseApp: Failed to get refresh token[0m
+[0;31mE (34997) esp-tls: couldn't get hostname for :esp32-iot-b4293-default-rtdb.firebaseio.comperson3.json: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (34997) esp-tls: Failed to open new connection[0m
+[0;31mE (34997) transport_base: Failed to open a new connection[0m
+[0;31mE (35007) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (35007) FirebaseApp: Error while performing request esp_err_t code=0x7002 | status_code=400[0m
+[0;31mE (35017) FirebaseApp: request: url=https://esp32-iot-b4293-default-rtdb.firebaseio.comperson3.json?auth= 
+method=0 
+post_field=[0m
+[0;31mE (35037) FirebaseApp: response=
+{
+  "error": {
+    "code": 400,
+    "message": "EMAIL_NOT_FOUND",
+    "errors": [
+      {
+        "message": "EMAIL_NOT_FOUND",
+        "domain": "global",
+        "reason": "invalid"
+      }
+    ]
+  }
+}
+[0m
+[0;31mE (35057) RTDB: Failed to get data after refreshing token. double check account credentials or database rules[0m
+[0;32mI (35067) MAIN: person3 as json string: 
+null
+[0m
+null
+
+[0;31mE (41997) esp-tls: couldn't get hostname for :esp32-iot-b4293-default-rtdb.firebaseio.comperson3.json: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (41997) esp-tls: Failed to open new connection[0m
+[0;31mE (41997) transport_base: Failed to open a new connection[0m
+[0;31mE (42007) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (42007) FirebaseApp: Error while performing request esp_err_t code=0x7002 | status_code=400[0m
+[0;31mE (42017) FirebaseApp: request: url=https://esp32-iot-b4293-default-rtdb.firebaseio.comperson3.json?auth= 
+method=4 
+post_field=[0m
+[0;31mE (42037) FirebaseApp: response=
+[0m
+[0;31mE (42037) RTDB: DELETE failed[0m
+[0;31mE (48997) esp-tls: couldn't get hostname for :esp32-iot-b4293-default-rtdb.firebaseio.comperson3.json: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (48997) esp-tls: Failed to open new connection[0m
+[0;31mE (48997) transport_base: Failed to open a new connection[0m
+[0;31mE (49007) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (49007) FirebaseApp: Error while performing request esp_err_t code=0x7002 | status_code=400[0m
+[0;31mE (49017) FirebaseApp: request: url=https://esp32-iot-b4293-default-rtdb.firebaseio.comperson3.json?auth= 
+method=0 
+post_field=[0m
+[0;31mE (49037) FirebaseApp: response=
+[0m
+[0;31mE (49037) RTDB: Error while getting data at path person3| esp_err_t=28674 | status_code=400[0m
+[0;32mI (49047) RTDB: Token expired ? Trying refreshing auth[0m
+[0;31mE (50157) FirebaseApp: Error while performing request esp_err_t code=0x0 | status_code=400[0m
+[0;31mE (50157) FirebaseApp: request: url=https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBWXNL-sxSHz0KM_9pFS7A99ZnH4zJ22i8 
+method=1 
+post_field={"email":"ashus3868@gmail.com", "password":"NLsKpfvtnawT8g5IKCiQJ00qhMooYNOgnEjiBKlm", "returnSecureToken": true}[0m
+[0;31mE (50177) FirebaseApp: response=
+{
+  "error": {
+    "code": 400,
+    "message": "EMAIL_NOT_FOUND",
+    "errors": [
+      {
+        "message": "EMAIL_NOT_FOUND",
+        "domain": "global",
+        "reason": "invalid"
+      }
+    ]
+  }
+}
+[0m
+[0;31mE (50207) FirebaseApp: Failed to get refresh token[0m
+[0;31mE (56997) esp-tls: couldn't get hostname for :esp32-iot-b4293-default-rtdb.firebaseio.comperson3.json: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (56997) esp-tls: Failed to open new connection[0m
+[0;31mE (56997) transport_base: Failed to open a new connection[0m
+[0;31mE (57007) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (57007) FirebaseApp: Error while performing request esp_err_t code=0x7002 | status_code=400[0m
+[0;31mE (57017) FirebaseApp: request: url=https://esp32-iot-b4293-default-rtdb.firebaseio.comperson3.json?auth= 
+method=0 
+post_field=[0m
+[0;31mE (57037) FirebaseApp: response=
+{
+  "error": {
+    "code": 400,
+    "message": "EMAIL_NOT_FOUND",
+    "errors": [
+      {
+        "message": "EMAIL_NOT_FOUND",
+        "domain": "global",
+        "reason": "invalid"
+      }
+    ]
+  }
+}
+[0m
+[0;31mE (57057) RTDB: Failed to get data after refreshing token. double check account credentials or database rules[0m
+null
+[0;32mI (57067) main_task: Returned from app_main()[0m

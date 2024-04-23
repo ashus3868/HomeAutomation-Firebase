@@ -9,7 +9,7 @@
 #include "nvs_flash.h"
 #include "esp_event.h"
 #include "esp_netif.h"
-
+#include "esp_wifi.h"
 
 #include "jsoncpp/value.h"
 #include "jsoncpp/json.h"
@@ -39,7 +39,7 @@ extern "C" void app_main(void)
     // R"()" allow us to write string as they are without escaping the characters with backslash
 
     // We can put a json str directly at /person1
-    std::string json_str = R"({"name": "Madjid", "age": 20, "random_float": 8.56})";
+    std::string json_str = R"({"name": "Ashish Saini", "age": 28, "random_float": 8.56})";
     db.putData("/person1", json_str.c_str()); 
     // vTaskDelay(500/portTICK_PERIOD_MS);
 
@@ -52,11 +52,11 @@ extern "C" void app_main(void)
 
     // ESP_LOGI("MAIN", "name: %s", madjid_name.c_str());   
 
-    data["name"] = "Tikou";
+    data["name"] = "Innovate Yourself";
 
     // ESP_LOGI("MAIN", "edited name from %s to: %s", madjid_name.c_str(), data["name"].asString().c_str());   
 
-    data["age"] = 22;
+    data["age"] = 25;
     data["random_float"] = 4.44;
     
     // put json object directly
@@ -65,7 +65,7 @@ extern "C" void app_main(void)
     // vTaskDelay(500/portTICK_PERIOD_MS);
     // Construct a new json object manually
     Json::Value new_data; 
-    new_data["name"] = "Lotfi";
+    new_data["name"] = "Ashu";
     new_data["age"] = 23;
     new_data["random_float"] = 5.95;
 
@@ -73,7 +73,7 @@ extern "C" void app_main(void)
     // vTaskDelay(500/portTICK_PERIOD_MS);
 
     // Edit person2 data in the database by patching
-    data["age"] = 23;
+    data["age"] = 26;
     db.patchData("person2", data);
     Json::Value root = db.getData("person3"); // retrieve person3 from database, set it to "" to get entire database
 
@@ -98,7 +98,6 @@ extern "C" void app_main(void)
     db.deleteData("person3"); // delete person3
     root = db.getData("person3"); // retrieve person3 from database, this time it will be null because person3 doesnt exist in database
     std::cout << root << std::endl;
-
 
 }
 

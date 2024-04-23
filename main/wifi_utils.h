@@ -18,7 +18,7 @@ CONDITIONS OF ANY KIND, either express or implied.
 #include "lwip/err.h"
 #include "lwip/sys.h"
 
-
+#include "esp_wifi_types.h"
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -61,6 +61,11 @@ static void event_handler(void *arg, esp_event_base_t event_base, int32_t event_
         s_retry_num = 0;
         xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
     }
+    else if (event_base == WIFI_EVENT && event_id == WIFI_REASON_BEACON_TIMEOUT)
+    {
+        ESP_LOGE("WiFi", "WIFI_REASON_BEACON_TIMEOUT");
+        // Handle wrong password scenario here
+    }
 }
 
 void wifi_init_sta(const char* ssid, const char* password) {
@@ -82,7 +87,7 @@ void wifi_init_sta(const char* ssid, const char* password) {
     memcpy(wifi_config.sta.ssid, ssid, strlen(ssid));
     memcpy(wifi_config.sta.password, password, strlen(password));
    
-    wifi_config.sta.threshold.authmode = WIFI_AUTH_WPA2_PSK;
+    wifi_config.sta.threshold.authmode = WIFI_AUTH_OPEN;
     wifi_config.sta.pmf_cfg = {true, false};
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config));
