@@ -1,0 +1,340 @@
+2mI (43) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (47) boot.es (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI �ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15692
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3884
+entry 0x40080650
+[0;32mI (33) boot: ESP-IDF v5.2-dev-823-g903af13e84-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time May 18 2024 11:19:13[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v1.0[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (80) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (88) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (95) boot:  3 factory          factory app      00 00 00010000 0014ccb8[0m
+[0;32mI (103) boot:  4 ota_0            OTA app          00 10 00160000 00133332[0m
+[0;32mI (110) boot:  5 ota_1            OTA app          00 11 002a0000 00133332[0m
+[0;32mI (118) boot:  6 nvs_key          NVS keys         01 04 003d4000 00001000[0m
+[0;32mI (125) boot: End of partition table[0m
+[0;32mI (130) boot: Defaulting to factory image[0m
+[0;32mI (134) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=42338h (271160) map[0m
+[0;32mI (224) esp_image: segment 1: paddr=00052360 vaddr=3ffb0000 size=03818h ( 14360) load[0m
+[0;32mI (230) esp_image: segment 2: paddr=00055b80 vaddr=40080000 size=0a498h ( 42136) load[0m
+[0;32mI (245) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=cf744h (849732) map[0m
+[0;32mI (501) esp_image: segment 4: paddr=0012f76c vaddr=4008a498 size=0b06ch ( 45164) load[0m
+[0;32mI (528) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (529) boot: Disabling RNG early entropy source...[0m
+[0;32mI (540) cpu_start: Multicore app[0m
+[0;32mI (540) cpu_start: Pro cpu up.[0m
+[0;32mI (540) cpu_start: Starting app cpu, entry point is 0x400811c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (558) cpu_start: Pro cpu start user code[0m
+[0;32mI (558) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (558) cpu_start: Application information:[0m
+[0;32mI (563) cpu_start: Project name:     firebase-esp-idf[0m
+[0;32mI (569) cpu_start: App version:      93ad277-dirty[0m
+[0;32mI (574) cpu_start: Compile time:     May 18 2024 11:19:09[0m
+[0;32mI (580) cpu_start: ELF file SHA256:  68def8190...[0m
+[0;32mI (586) cpu_start: ESP-IDF:          v5.2-dev-823-g903af13e84-dirty[0m
+[0;32mI (593) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (597) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (602) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (607) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (614) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFB9580 len 00026A80 (154 KiB): DRAM[0m
+[0;32mI (626) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (639) heap_init: At 40095504 len 0000AAFC (42 KiB): IRAM[0m
+[0;32mI (646) spi_flash: detected chip: generic[0m
+[0;32mI (650) spi_flash: flash io: dio[0m
+[0;32mI (656) app_start: Starting scheduler on CPU0[0m
+[0;32mI (659) app_start: Starting scheduler on CPU1[0m
+[0;32mI (659) main_task: Started on CPU0[0m
+[0;32mI (669) main_task: Calling app_main()[0m
+[0;32mI (689) wifi station: ESP_WIFI_MODE_STA[0m
+I (699) wifi:wifi driver task: 3ffc2858, prio:23, stack:6656, core=0
+I (709) wifi:wifi firmware version: 10c8635
+I (709) wifi:wifi certification version: v7.0
+I (709) wifi:config NVS flash: enabled
+I (709) wifi:config nano formating: disabled
+I (709) wifi:Init data frame dynamic rx buffer num: 32
+I (719) wifi:Init management frame dynamic rx buffer num: 32
+I (719) wifi:Init management short buffer num: 32
+I (729) wifi:Init dynamic tx buffer num: 32
+I (729) wifi:Init static rx buffer size: 1600
+I (729) wifi:Init static rx buffer num: 10
+I (739) wifi:Init dynamic rx buffer num: 32
+[0;32mI (739) wifi_init: rx ba win: 6[0m
+[0;32mI (749) wifi_init: tcpip mbox: 32[0m
+[0;32mI (749) wifi_init: udp mbox: 6[0m
+[0;32mI (749) wifi_init: tcp mbox: 6[0m
+[0;32mI (759) wifi_init: tcp tx win: 5744[0m
+[0;32mI (759) wifi_init: tcp rx win: 5744[0m
+[0;32mI (769) wifi_init: tcp mss: 1440[0m
+[0;32mI (769) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (769) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (779) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (879) wifi:mode : sta (34:86:5d:4d:91:88)
+I (879) wifi:enable tsf
+[0;32mI (879) wifi station: wifi_init_sta finished.[0m
+I (889) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (889) wifi:state: init -> auth (b0)
+I (1949) wifi:state: auth -> assoc (0)
+I (1959) wifi:state: assoc -> run (10)
+I (1989) wifi:connected with FD-56, aid = 2, channel 1, BW20, bssid = 8e:4c:55:fc:17:19
+I (1989) wifi:security: WPA3-SAE, phy: bgn, rssi: -31
+I (1999) wifi:pm start, type: 1
+
+I (2009) wifi:<ba-add>idx:0 (ifx:0, 8e:4c:55:fc:17:19), tid:0, ssn:0, winSize:64
+I (2059) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (2999) esp_netif_handlers: sta ip: 192.168.231.125, mask: 255.255.255.0, gw: 192.168.231.129[0m
+[0;32mI (2999) wifi station: got ip:192.168.231.125[0m
+[0;33mW (2999) wifi station: connected to ap SSID: FD-56 || password: Ashish@143[0m
+I (3069) wifi:<ba-add>idx:1 (ifx:0, 8e:4c:55:fc:17:19), tid:4, ssn:0, winSize:64
+[0;31mE (4319) FirebaseApp: Error while performing request esp_err_t code=0x0 | status_code=400[0m
+[0;31mE (4319) FirebaseApp: request: url=https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=nc8W74Gwc2hZOe0tXDLNvZNeBQ805qFTPZx4TpGs 
+method=1 
+post_field={"email":"innovateyourself2build@gmail.com", "password":"12345678", "returnSecureToken": true}[0m
+[0;31mE (4339) FirebaseApp: response=
+{
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "errors": [
+      {
+        "message": "API key not valid. Please pass a valid API key.",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "identitytoolkit.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+[0m
+[0;31mE (4399) FirebaseApp: Failed to get refresh token[0m
+[0;32mI (6159) RTDB: PUT successful[0m
+[0;32mI (6569) RTDB: PUT successful[0m
+[0;31mE (6579) esp-tls: couldn't get hostname for :esp-idf-fire-default-rtdb.firebaseio.comperson3.json: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (6579) esp-tls: Failed to open new connection[0m
+[0;31mE (6579) transport_base: Failed to open a new connection[0m
+[0;31mE (6589) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (6589) FirebaseApp: Error while performing request esp_err_t code=0x7002 | status_code=200[0m
+[0;31mE (6599) FirebaseApp: request: url=https://esp-idf-fire-default-rtdb.firebaseio.comperson3.json?auth= 
+method=2 
+post_field={"age":23,"name":"Ashu","random_float":5.9500000000000002}
+[0m
+[0;31mE (6619) FirebaseApp: response=
+[0m
+[0;31mE (6619) RTDB: PUT failed[0m
+[0;31mE (6659) esp-tls: couldn't get hostname for :esp-idf-fire-default-rtdb.firebaseio.comperson2.json: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (6659) esp-tls: Failed to open new connection[0m
+[0;31mE (6669) transport_base: Failed to open a new connection[0m
+[0;31mE (6669) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (6679) FirebaseApp: Error while performing request esp_err_t code=0x7002 | status_code=200[0m
+[0;31mE (6689) FirebaseApp: request: url=https://esp-idf-fire-default-rtdb.firebaseio.comperson2.json?auth= 
+method=3 
+post_field={"age":26,"name":"Innovate Yourself","random_float":4.4400000000000004}
+[0m
+[0;31mE (6709) FirebaseApp: response=
+[0m
+[0;31mE (6709) RTDB: PATCH failed[0m
+[0;31mE (6719) esp-tls: couldn't get hostname for :esp-idf-fire-default-rtdb.firebaseio.comperson3.json: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (6729) esp-tls: Failed to open new connection[0m
+[0;31mE (6729) transport_base: Failed to open a new connection[0m
+[0;31mE (6739) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (6739) FirebaseApp: Error while performing request esp_err_t code=0x7002 | status_code=200[0m
+[0;31mE (6749) FirebaseApp: request: url=https://esp-idf-fire-default-rtdb.firebaseio.comperson3.json?auth= 
+method=0 
+post_field=[0m
+[0;31mE (6759) FirebaseApp: response=
+[0m
+[0;31mE (6769) RTDB: Error while getting data at path person3| esp_err_t=28674 | status_code=200[0m
+[0;32mI (6779) RTDB: Token expired ? Trying refreshing auth[0m
+[0;31mE (8209) FirebaseApp: Error while performing request esp_err_t code=0x0 | status_code=400[0m
+[0;31mE (8209) FirebaseApp: request: url=https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=nc8W74Gwc2hZOe0tXDLNvZNeBQ805qFTPZx4TpGs 
+method=1 
+post_field={"email":"innovateyourself2build@gmail.com", "password":"12345678", "returnSecureToken": true}[0m
+[0;31mE (8229) FirebaseApp: response=
+{
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "errors": [
+      {
+        "message": "API key not valid. Please pass a valid API key.",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "identitytoolkit.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+[0m
+[0;31mE (8289) FirebaseApp: Failed to get refresh token[0m
+[0;31mE (8309) esp-tls: couldn't get hostname for :esp-idf-fire-default-rtdb.firebaseio.comperson3.json: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8309) esp-tls: Failed to open new connection[0m
+[0;31mE (8319) transport_base: Failed to open a new connection[0m
+[0;31mE (8319) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (8329) FirebaseApp: Error while performing request esp_err_t code=0x7002 | status_code=400[0m
+[0;31mE (8339) FirebaseApp: request: url=https://esp-idf-fire-default-rtdb.firebaseio.comperson3.json?auth= 
+method=0 
+post_field=[0m
+[0;31mE (8349) FirebaseApp: response=
+{
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "errors": [
+      {
+        "message": "API key not valid. Please pass a valid API key.",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "identitytoolkit.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+[0m
+[0;31mE (8409) RTDB: Failed to get data after refreshing token. double check account credentials or database rules[0m
+[0;32mI (8419) MAIN: person3 as json string: 
+null
+[0m
+null
+
+[0;31mE (8449) esp-tls: couldn't get hostname for :esp-idf-fire-default-rtdb.firebaseio.comperson3.json: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8449) esp-tls: Failed to open new connection[0m
+[0;31mE (8459) transport_base: Failed to open a new connection[0m
+[0;31mE (8469) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (8469) FirebaseApp: Error while performing request esp_err_t code=0x7002 | status_code=400[0m
+[0;31mE (8479) FirebaseApp: request: url=https://esp-idf-fire-default-rtdb.firebaseio.comperson3.json?auth= 
+method=4 
+post_field=[0m
+[0;31mE (8489) FirebaseApp: response=
+[0m
+[0;31mE (8499) RTDB: DELETE failed[0m
+[0;31mE (8499) esp-tls: couldn't get hostname for :esp-idf-fire-default-rtdb.firebaseio.comperson3.json: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8509) esp-tls: Failed to open new connection[0m
+[0;31mE (8519) transport_base: Failed to open a new connection[0m
+[0;31mE (8519) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (8529) FirebaseApp: Error while performing request esp_err_t code=0x7002 | status_code=400[0m
+[0;31mE (8539) FirebaseApp: request: url=https://esp-idf-fire-default-rtdb.firebaseio.comperson3.json?auth= 
+method=0 
+post_field=[0m
+[0;31mE (8549) FirebaseApp: response=
+[0m
+[0;31mE (8549) RTDB: Error while getting data at path person3| esp_err_t=28674 | status_code=400[0m
+[0;32mI (8559) RTDB: Token expired ? Trying refreshing auth[0m
+[0;31mE (9849) FirebaseApp: Error while performing request esp_err_t code=0x0 | status_code=400[0m
+[0;31mE (9849) FirebaseApp: request: url=https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=nc8W74Gwc2hZOe0tXDLNvZNeBQ805qFTPZx4TpGs 
+method=1 
+post_field={"email":"innovateyourself2build@gmail.com", "password":"12345678", "returnSecureToken": true}[0m
+[0;31mE (9869) FirebaseApp: response=
+{
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "errors": [
+      {
+        "message": "API key not valid. Please pass a valid API key.",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "identitytoolkit.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+[0m
+[0;31mE (9919) FirebaseApp: Failed to get refresh token[0m
+[0;31mE (9939) esp-tls: couldn't get hostname for :esp-idf-fire-default-rtdb.firebaseio.comperson3.json: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (9939) esp-tls: Failed to open new connection[0m
+[0;31mE (9949) transport_base: Failed to open a new connection[0m
+[0;31mE (9949) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (9959) FirebaseApp: Error while performing request esp_err_t code=0x7002 | status_code=400[0m
+[0;31mE (9969) FirebaseApp: request: url=https://esp-idf-fire-default-rtdb.firebaseio.comperson3.json?auth= 
+method=0 
+post_field=[0m
+[0;31mE (9979) FirebaseApp: response=
+{
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "errors": [
+      {
+        "message": "API key not valid. Please pass a valid API key.",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "identitytoolkit.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+[0m
+[0;31mE (10039) RTDB: Failed to get data after refreshing token. double check account credentials or database rules[0m
+null
+[0;32mI (10049) main_task: Returned from app_main()[0m

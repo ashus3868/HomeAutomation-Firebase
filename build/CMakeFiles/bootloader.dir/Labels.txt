@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/ashishsaini/Firebase-ESP-IDF-IY/build/CMakeFiles/bootloader
+/Users/ashishsaini/Firebase-ESP-IDF-IY/build/CMakeFiles/bootloader.rule
+/Users/ashishsaini/Firebase-ESP-IDF-IY/build/CMakeFiles/bootloader-complete.rule
+/Users/ashishsaini/Firebase-ESP-IDF-IY/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/ashishsaini/Firebase-ESP-IDF-IY/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/ashishsaini/Firebase-ESP-IDF-IY/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/ashishsaini/Firebase-ESP-IDF-IY/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/ashishsaini/Firebase-ESP-IDF-IY/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/ashishsaini/Firebase-ESP-IDF-IY/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/ashishsaini/Firebase-ESP-IDF-IY/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

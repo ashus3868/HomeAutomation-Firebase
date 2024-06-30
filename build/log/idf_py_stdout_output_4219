@@ -1,0 +1,116 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/ashishsaini/Firebase-ESP-IDF-IY/build/bootloader/esp-idf/esptool_py && /Users/ashishsaini/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/ashishsaini/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/ashishsaini/Firebase-ESP-IDF-IY/build/bootloader/bootloader.bin
+Bootloader binary size 0x68c0 bytes. 0x740 bytes (6%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+In file included from /Users/ashishsaini/Firebase-ESP-IDF-IY/main/main.cpp:21:
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h: In function 'void wifi_init_sta(const char*, const char*)':
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::password' [-Wmissing-field-initializers]
+   86 |     wifi_config_t wifi_config = {0};
+      |                                   ^
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::ssid_len' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::channel' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::authmode' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::ssid_hidden' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::max_connection' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::beacon_interval' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::pairwise_cipher' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::ftm_responder' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::pmf_cfg' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::sae_pwe_h2e' [-Wmissing-field-initializers]
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable firebase-esp-idf.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.7.dev2
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated /Users/ashishsaini/Firebase-ESP-IDF-IY/build/firebase-esp-idf.bin
+[9/10] cd /Users/ashishsaini/Firebase-ESP-IDF-IY/build/esp-idf/esptool_py && /Users/ashishsaini/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/ashishsaini/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/ashishsaini/Firebase-ESP-IDF-IY/build/partition_table/partition-table.bin /Users/ashishsaini/Firebase-ESP-IDF-IY/build/firebase-esp-idf.bin
+firebase-esp-idf.bin binary size 0x12b090 bytes. Smallest app partition is 0x133332 bytes. 0x82a2 bytes (3%) free.
+Warning: The smallest app partition is nearly full (3% free space left)!
+[9/10] cd /Users/ashishsaini/esp/esp-idf/components/esptool_py && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -D IDF_PATH=/Users/ashishsaini/esp/esp-idf -D "SERIAL_TOOL=/Users/ashishsaini/.espressif/python_env/idf5.2_py3.9_env/bin/python;;/Users/ashishsaini/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/ashishsaini/Firebase-ESP-IDF-IY/build -P /Users/ashishsaini/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/cu.usbserial-0001 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 firebase-esp-idf.bin 0x8000 partition_table/partition-table.bin 0xd000 ota_data_initial.bin
+esptool.py v4.7.dev2
+Serial port /dev/cu.usbserial-0001
+Connecting....
+Chip is ESP32-D0WD (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 34:86:5d:4d:91:88
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0013bfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000d000 to 0x0000efff...
+Compressed 26816 bytes to 16826...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000768e... (100 %)
+Wrote 26816 bytes (16826 compressed) at 0x00001000 in 0.9 seconds (effective 226.8 kbit/s)...
+Hash of data verified.
+Compressed 1224848 bytes to 720965...
+Writing at 0x00010000... (2 %)
+Writing at 0x00019317... (4 %)
+Writing at 0x00023da1... (6 %)
+Writing at 0x0002d0f7... (8 %)
+Writing at 0x0003269e... (11 %)
+Writing at 0x0003ccd3... (13 %)
+Writing at 0x000508c4... (15 %)
+Writing at 0x00059dd7... (17 %)
+Writing at 0x0005f6bb... (20 %)
+Writing at 0x00064dac... (22 %)
+Writing at 0x0006af4e... (24 %)
+Writing at 0x000710b9... (26 %)
+Writing at 0x00076ca7... (28 %)
+Writing at 0x0007c898... (31 %)
+Writing at 0x000825a5... (33 %)
+Writing at 0x00087b1c... (35 %)
+Writing at 0x0008cf53... (37 %)
+Writing at 0x00092440... (40 %)
+Writing at 0x0009776f... (42 %)
+Writing at 0x0009ce19... (44 %)
+Writing at 0x000a25a8... (46 %)
+Writing at 0x000a8625... (48 %)
+Writing at 0x000addd0... (51 %)
+Writing at 0x000b33f5... (53 %)
+Writing at 0x000b8ba9... (55 %)
+Writing at 0x000be55a... (57 %)
+Writing at 0x000c3bdb... (60 %)
+Writing at 0x000c95b2... (62 %)
+Writing at 0x000cf364... (64 %)
+Writing at 0x000d559c... (66 %)
+Writing at 0x000dae3a... (68 %)
+Writing at 0x000e053c... (71 %)
+Writing at 0x000e67ae... (73 %)
+Writing at 0x000eda9c... (75 %)
+Writing at 0x000f680c... (77 %)
+Writing at 0x000fe7aa... (80 %)
+Writing at 0x00105c51... (82 %)
+Writing at 0x0010b31b... (84 %)
+Writing at 0x00111761... (86 %)
+Writing at 0x001198fd... (88 %)
+Writing at 0x00121bb4... (91 %)
+Writing at 0x00128ddb... (93 %)
+Writing at 0x001300c6... (95 %)
+Writing at 0x001358d2... (97 %)
+Writing at 0x0013b03e... (100 %)
+Wrote 1224848 bytes (720965 compressed) at 0x00010000 in 19.2 seconds (effective 510.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 159...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (159 compressed) at 0x00008000 in 0.1 seconds (effective 192.0 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0000d000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0000d000 in 0.2 seconds (effective 336.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

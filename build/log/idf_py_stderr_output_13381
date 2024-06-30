@@ -1,0 +1,50 @@
+Traceback (most recent call last):
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/parttool.py", line 358, in <module>
+    main()
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/parttool.py", line 327, in main
+    target = ParttoolTarget(**target_args)
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/parttool.py", line 97, in __init__
+    partition_table = gen.PartitionTable.from_csv(f.read())
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/gen_esp32part.py", line 195, in from_csv
+    raise InputError('CSV Error at line %d: Partitions overlap. Partition sets offset 0x%x. '
+gen_esp32part.InputError: CSV Error at line 2: Partitions overlap. Partition sets offset 0x9000. But partition table occupies the whole sector 0x20000. Use a free offset 0x21000 or higher.
+Traceback (most recent call last):
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/parttool.py", line 358, in <module>
+    main()
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/parttool.py", line 327, in main
+    target = ParttoolTarget(**target_args)
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/parttool.py", line 97, in __init__
+    partition_table = gen.PartitionTable.from_csv(f.read())
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/gen_esp32part.py", line 195, in from_csv
+    raise InputError('CSV Error at line %d: Partitions overlap. Partition sets offset 0x%x. '
+gen_esp32part.InputError: CSV Error at line 2: Partitions overlap. Partition sets offset 0x9000. But partition table occupies the whole sector 0x20000. Use a free offset 0x21000 or higher.
+Traceback (most recent call last):
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/parttool.py", line 358, in <module>
+    main()
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/parttool.py", line 327, in main
+    target = ParttoolTarget(**target_args)
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/parttool.py", line 97, in __init__
+    partition_table = gen.PartitionTable.from_csv(f.read())
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/gen_esp32part.py", line 195, in from_csv
+    raise InputError('CSV Error at line %d: Partitions overlap. Partition sets offset 0x%x. '
+gen_esp32part.InputError: CSV Error at line 2: Partitions overlap. Partition sets offset 0x9000. But partition table occupies the whole sector 0x20000. Use a free offset 0x21000 or higher.
+Traceback (most recent call last):
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/parttool.py", line 358, in <module>
+    main()
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/parttool.py", line 327, in main
+    target = ParttoolTarget(**target_args)
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/parttool.py", line 97, in __init__
+    partition_table = gen.PartitionTable.from_csv(f.read())
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/gen_esp32part.py", line 195, in from_csv
+    raise InputError('CSV Error at line %d: Partitions overlap. Partition sets offset 0x%x. '
+gen_esp32part.InputError: CSV Error at line 2: Partitions overlap. Partition sets offset 0x9000. But partition table occupies the whole sector 0x20000. Use a free offset 0x21000 or higher.
+Traceback (most recent call last):
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/parttool.py", line 358, in <module>
+    main()
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/parttool.py", line 327, in main
+    target = ParttoolTarget(**target_args)
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/parttool.py", line 97, in __init__
+    partition_table = gen.PartitionTable.from_csv(f.read())
+  File "/Users/ashishsaini/esp/esp-idf/components/partition_table/gen_esp32part.py", line 195, in from_csv
+    raise InputError('CSV Error at line %d: Partitions overlap. Partition sets offset 0x%x. '
+gen_esp32part.InputError: CSV Error at line 2: Partitions overlap. Partition sets offset 0x9000. But partition table occupies the whole sector 0x20000. Use a free offset 0x21000 or higher.

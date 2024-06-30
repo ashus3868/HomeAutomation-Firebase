@@ -1,0 +1,171 @@
+�:���҂�ڴj5R�I (871) wifi:mode : sta (44:17:93:7d:7d:c8)
+I (871) wifi:enable tsf
+[0;32mI (871) wifi station: wifi_init_sta finished.[0m
+I (1601) wifi:new:<7,2>, old:<1,0>, ap:<255,255>, sta:<7,2>, prof:1
+I (2091) wifi:state: init -> auth (b0)
+I (2091) wifi:state: auth -> assoc (0)
+I (2101) wifi:state: assoc -> run (10)
+I (2201) wifi:connected with #include<iot.h>, aid = 2, channel 7, 40D, bssid = c2:94:ad:eb:8a:fa
+I (2201) wifi:security: WPA2-PSK, phy: bgn, rssi: -64
+I (2221) wifi:pm start, type: 1
+
+I (2291) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (4351) wifi:<ba-add>idx:0 (ifx:0, c2:94:ad:eb:8a:fa), tid:0, ssn:0, winSize:64
+[0;32mI (5221) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (5221) wifi station: got ip:192.168.1.8[0m
+[0;33mW (5221) wifi station: connected to ap SSID: #include<iot.h> || password: Gruh@@2020[0m
+I (6701) wifi:<ba-add>idx:1 (ifx:0, c2:94:ad:eb:8a:fa), tid:6, ssn:2, winSize:64
+[0;31mE (13591) FirebaseApp: Error while performing request esp_err_t code=0x0 | status_code=400[0m
+[0;31mE (13591) FirebaseApp: request: url=https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=BJZyIz3vaVD4HO6IKXNEc8TcbU00ZsncsFXohfEw 
+method=1 
+post_field={"email":"innovateyourself2build@gmail.com", "password":"12345678", "returnSecureToken": true}[0m
+[0;31mE (13611) FirebaseApp: response=
+{
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "errors": [
+      {
+        "message": "API key not valid. Please pass a valid API key.",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "identitytoolkit.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+[0m
+[0;31mE (13671) FirebaseApp: Failed to get refresh token[0m
+[0;32mI (21961) RTDB: PUT successful[0m
+[0;32mI (22271) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (22271) MAIN: Bedroom as json string: 
+{"Appliances1":0,"Appliances2":0,"Appliances3":0,"Appliances4":0}
+[0m
+[0;32mI (22281) Relay 1: Relay 1 Turned Off[0m
+[0;32mI (22281) Relay 2: Relay 2 Turned Off[0m
+[0;32mI (22281) Relay 3: Relay 3 Turned Off[0m
+[0;32mI (22291) Relay 4: Relay 4 Turned Off[0m
+{
+	"Appliances1" : 0,
+	"Appliances2" : 0,
+	"Appliances3" : 0,
+	"Appliances4" : 0
+}
+Appliances1, Appliances2, Appliances3, Appliances4, 
+[0;32mI (23601) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (23911) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (24251) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (24621) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (25041) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (25441) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (25851) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (26261) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (26571) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (26881) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (27211) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (27511) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (27901) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (28311) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (28721) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (29031) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (29341) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (29671) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (30051) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (30461) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (30771) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (31181) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (31481) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (31811) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (32141) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (32431) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (32721) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (33051) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (33431) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (33741) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (34041) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (34361) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (34691) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (34981) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (35381) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (35681) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (36011) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (36341) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (36341) MAIN: Bedroom as json string: 
+{"Appliances1":1,"Appliances2":0,"Appliances3":0,"Appliances4":0}
+[0m
+[0;32mI (36341) Relay 1: Relay 1 Turned ON[0m
+[0;32mI (36341) Relay 2: Relay 2 Turned Off[0m
+[0;32mI (36351) Relay 3: Relay 3 Turned Off[0m
+[0;32mI (36351) Relay 4: Relay 4 Turned Off[0m
+{
+	"Appliances1" : 1,
+	"Appliances2" : 0,
+	"Appliances3" : 0,
+	"Appliances4" : 0
+}
+Appliances1, Appliances2, Appliances3, Appliances4, 
+[0;32mI (37661) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (37981) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (38271) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (38561) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (38561) MAIN: Bedroom as json string: 
+{"Appliances1":1,"Appliances2":1,"Appliances3":0,"Appliances4":0}
+[0m
+[0;32mI (38571) Relay 1: Relay 1 Turned ON[0m
+[0;32mI (38571) Relay 2: Relay 2 Turned ON[0m
+[0;32mI (38571) Relay 3: Relay 3 Turned Off[0m
+[0;32mI (38581) Relay 4: Relay 4 Turned Off[0m
+{
+	"Appliances1" : 1,
+	"Appliances2" : 1,
+	"Appliances3" : 0,
+	"Appliances4" : 0
+}
+Appliances1, Appliances2, Appliances3, Appliances4, 
+[0;32mI (39881) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (40201) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (40201) MAIN: Bedroom as json string: 
+{"Appliances1":1,"Appliances2":1,"Appliances3":1,"Appliances4":0}
+[0m
+[0;32mI (40211) Relay 1: Relay 1 Turned ON[0m
+[0;32mI (40211) Relay 2: Relay 2 Turned ON[0m
+[0;32mI (40211) Relay 3: Relay 3 Turned ON[0m
+[0;32mI (40221) Relay 4: Relay 4 Turned Off[0m
+{
+	"Appliances1" : 1,
+	"Appliances2" : 1,
+	"Appliances3" : 1,
+	"Appliances4" : 0
+}
+Appliances1, Appliances2, Appliances3, Appliances4, 
+[0;32mI (41521) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (41531) MAIN: Bedroom as json string: 
+{"Appliances1":1,"Appliances2":1,"Appliances3":1,"Appliances4":1}
+[0m
+[0;32mI (41531) Relay 1: Relay 1 Turned ON[0m
+[0;32mI (41531) Relay 2: Relay 2 Turned ON[0m
+[0;32mI (41541) Relay 3: Relay 3 Turned ON[0m
+[0;32mI (41541) Relay 4: Relay 4 Turned On[0m
+{
+	"Appliances1" : 1,
+	"Appliances2" : 1,
+	"Appliances3" : 1,
+	"Appliances4" : 1
+}
+Appliances1, Appliances2, Appliances3, Appliances4, 
+[0;32mI (42851) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (43161) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (43491) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (43821) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (44111) RTDB: Data with path=Bedroom acquired[0m
+[0;32mI (44401) RTDB: Data with path=Bedroom acquired[0m

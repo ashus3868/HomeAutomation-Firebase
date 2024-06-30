@@ -1,0 +1,44 @@
+[0;33m--- esp-idf-monitor 1.3.2 on /dev/cu.usbserial-0001 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400811c4: call_start_cpu1 at /Users/ashishsaini/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400811c4: call_start_cpu1 at /Users/ashishsaini/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m.[0m[0;33m[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400811c4: call_start_cpu1 at /Users/ashishsaini/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m[0m
+[1;31mDevice not configured[0m
+[0;33mWaiting for the device to reconnect[0mException in thread Thread-2:
+Traceback (most recent call last):
+  File "/Users/ashishsaini/.espressif/python_env/idf5.2_py3.9_env/lib/python3.9/site-packages/esp_idf_monitor/base/serial_reader.py", line 76, in run
+    data = self.serial.read(self.serial.in_waiting or 1)
+  File "/Users/ashishsaini/.espressif/python_env/idf5.2_py3.9_env/lib/python3.9/site-packages/serial/serialposix.py", line 549, in in_waiting
+    s = fcntl.ioctl(self.fd, TIOCINQ, TIOCM_zero_str)
+OSError: [Errno 6] Device not configured
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/opt/local/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/ashishsaini/.espressif/python_env/idf5.2_py3.9_env/lib/python3.9/site-packages/esp_idf_monitor/base/stoppable_thread.py", line 47, in _run_outer
+    self.run()
+  File "/Users/ashishsaini/.espressif/python_env/idf5.2_py3.9_env/lib/python3.9/site-packages/esp_idf_monitor/base/serial_reader.py", line 91, in run
+    self.serial.open()
+  File "/Users/ashishsaini/.espressif/python_env/idf5.2_py3.9_env/lib/python3.9/site-packages/serial/serialposix.py", line 332, in open
+    self._reconfigure_port(force_update=True)
+  File "/Users/ashishsaini/.espressif/python_env/idf5.2_py3.9_env/lib/python3.9/site-packages/serial/serialposix.py", line 517, in _reconfigure_port
+    termios.tcsetattr(
+termios.error: (22, 'Invalid argument')
+[0m

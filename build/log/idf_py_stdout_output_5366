@@ -1,0 +1,44 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/ashishsaini/Firebase-ESP-IDF-IY/build/bootloader/esp-idf/esptool_py && /Users/ashishsaini/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/ashishsaini/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/ashishsaini/Firebase-ESP-IDF-IY/build/bootloader/bootloader.bin
+Bootloader binary size 0x68c0 bytes. 0x740 bytes (6%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+In file included from /Users/ashishsaini/Firebase-ESP-IDF-IY/main/main.cpp:21:
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h: In function 'void wifi_init_sta(const char*, const char*)':
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::password' [-Wmissing-field-initializers]
+   86 |     wifi_config_t wifi_config = {0};
+      |                                   ^
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::ssid_len' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::channel' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::authmode' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::ssid_hidden' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::max_connection' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::beacon_interval' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::pairwise_cipher' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::ftm_responder' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::pmf_cfg' [-Wmissing-field-initializers]
+/Users/ashishsaini/Firebase-ESP-IDF-IY/main/wifi_utils.h:86:35: warning: missing initializer for member 'wifi_ap_config_t::sae_pwe_h2e' [-Wmissing-field-initializers]
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable firebase-esp-idf.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.7.dev2
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated /Users/ashishsaini/Firebase-ESP-IDF-IY/build/firebase-esp-idf.bin
+[9/10] cd /Users/ashishsaini/Firebase-ESP-IDF-IY/build/esp-idf/esptool_py && /Users/ashishsaini/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/ashishsaini/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/ashishsaini/Firebase-ESP-IDF-IY/build/partition_table/partition-table.bin /Users/ashishsaini/Firebase-ESP-IDF-IY/build/firebase-esp-idf.bin
+firebase-esp-idf.bin binary size 0x12b090 bytes. Smallest app partition is 0x133332 bytes. 0x82a2 bytes (3%) free.
+Warning: The smallest app partition is nearly full (3% free space left)!
+[9/10] cd /Users/ashishsaini/esp/esp-idf/components/esptool_py && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -D IDF_PATH=/Users/ashishsaini/esp/esp-idf -D "SERIAL_TOOL=/Users/ashishsaini/.espressif/python_env/idf5.2_py3.9_env/bin/python;;/Users/ashishsaini/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/ashishsaini/Firebase-ESP-IDF-IY/build -P /Users/ashishsaini/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/cu.usbserial-0001 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 firebase-esp-idf.bin 0x8000 partition_table/partition-table.bin 0xd000 ota_data_initial.bin
+esptool.py v4.7.dev2
+Serial port /dev/cu.usbserial-0001
+
+A fatal error occurred: Could not open /dev/cu.usbserial-0001, the port is busy or doesn't exist.
+([Errno 16] could not open port /dev/cu.usbserial-0001: [Errno 16] Resource busy: '/dev/cu.usbserial-0001')
+
+FAILED: CMakeFiles/flash /Users/ashishsaini/Firebase-ESP-IDF-IY/build/CMakeFiles/flash 
+cd /Users/ashishsaini/esp/esp-idf/components/esptool_py && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -D IDF_PATH=/Users/ashishsaini/esp/esp-idf -D "SERIAL_TOOL=/Users/ashishsaini/.espressif/python_env/idf5.2_py3.9_env/bin/python;;/Users/ashishsaini/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/ashishsaini/Firebase-ESP-IDF-IY/build -P /Users/ashishsaini/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.

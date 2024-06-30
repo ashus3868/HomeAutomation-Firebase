@@ -1,0 +1,1281 @@
+I (42) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (47) boot.esp3�J��ѹesp32: SPI Flash Size : 4MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (6�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15692
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3884
+entry 0x40080650
+[0;32mI (32) boot: ESP-IDF v5.2-dev-823-g903af13e84-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time May 18 2024 11:19:13[0m
+[0;32mI (35) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v1.0[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (80) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (87) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (95) boot:  3 factory          factory app      00 00 00010000 0014ccb8[0m
+[0;32mI (102) boot:  4 ota_0            OTA app          00 10 00160000 00133332[0m
+[0;32mI (110) boot:  5 ota_1            OTA app          00 11 002a0000 00133332[0m
+[0;32mI (117) boot:  6 nvs_key          NVS keys         01 04 003d4000 00001000[0m
+[0;32mI (125) boot: End of partition table[0m
+[0;32mI (129) boot: Defaulting to factory image[0m
+[0;32mI (134) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=42734h (272180) map[0m
+[0;32mI (225) esp_image: segment 1: paddr=0005275c vaddr=3ffb0000 size=03860h ( 14432) load[0m
+[0;32mI (230) esp_image: segment 2: paddr=00055fc4 vaddr=40080000 size=0a054h ( 41044) load[0m
+[0;32mI (245) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=cfb2ch (850732) map[0m
+[0;32mI (501) esp_image: segment 4: paddr=0012fb54 vaddr=4008a054 size=0b4b0h ( 46256) load[0m
+[0;32mI (529) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (529) boot: Disabling RNG early entropy source...[0m
+[0;32mI (541) cpu_start: Multicore app[0m
+[0;32mI (541) cpu_start: Pro cpu up.[0m
+[0;32mI (541) cpu_start: Starting app cpu, entry point is 0x400811c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (559) cpu_start: Pro cpu start user code[0m
+[0;32mI (559) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (559) cpu_start: Application information:[0m
+[0;32mI (564) cpu_start: Project name:     firebase-esp-idf[0m
+[0;32mI (569) cpu_start: App version:      93ad277-dirty[0m
+[0;32mI (575) cpu_start: Compile time:     May 18 2024 11:19:09[0m
+[0;32mI (581) cpu_start: ELF file SHA256:  20e8094f2...[0m
+[0;32mI (586) cpu_start: ESP-IDF:          v5.2-dev-823-g903af13e84-dirty[0m
+[0;32mI (593) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (598) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (603) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (608) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (615) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (621) heap_init: At 3FFB95C8 len 00026A38 (154 KiB): DRAM[0m
+[0;32mI (627) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (640) heap_init: At 40095504 len 0000AAFC (42 KiB): IRAM[0m
+[0;32mI (647) spi_flash: detected chip: generic[0m
+[0;32mI (651) spi_flash: flash io: dio[0m
+[0;32mI (657) app_start: Starting scheduler on CPU0[0m
+[0;32mI (660) app_start: Starting scheduler on CPU1[0m
+[0;32mI (660) main_task: Started on CPU0[0m
+[0;32mI (670) main_task: Calling app_main()[0m
+[0;32mI (690) wifi station: ESP_WIFI_MODE_STA[0m
+I (700) wifi:wifi driver task: 3ffc28a0, prio:23, stack:6656, core=0
+I (710) wifi:wifi firmware version: 10c8635
+I (710) wifi:wifi certification version: v7.0
+I (710) wifi:config NVS flash: enabled
+I (710) wifi:config nano formating: disabled
+I (710) wifi:Init data frame dynamic rx buffer num: 32
+I (720) wifi:Init management frame dynamic rx buffer num: 32
+I (720) wifi:Init management short buffer num: 32
+I (730) wifi:Init dynamic tx buffer num: 32
+I (730) wifi:Init static rx buffer size: 1600
+I (730) wifi:Init static rx buffer num: 10
+I (740) wifi:Init dynamic rx buffer num: 32
+[0;32mI (740) wifi_init: rx ba win: 6[0m
+[0;32mI (750) wifi_init: tcpip mbox: 32[0m
+[0;32mI (750) wifi_init: udp mbox: 6[0m
+[0;32mI (750) wifi_init: tcp mbox: 6[0m
+[0;32mI (760) wifi_init: tcp tx win: 5744[0m
+[0;32mI (760) wifi_init: tcp rx win: 5744[0m
+[0;32mI (770) wifi_init: tcp mss: 1440[0m
+[0;32mI (770) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (770) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (780) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (880) wifi:mode : sta (34:86:5d:4d:91:88)
+I (880) wifi:enable tsf
+[0;32mI (880) wifi station: wifi_init_sta finished.[0m
+I (950) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (950) wifi:state: init -> auth (b0)
+I (1930) wifi:state: auth -> assoc (0)
+E (1940) wifi:Association refused temporarily, comeback time 1024 mSec
+I (2960) wifi:state: assoc -> assoc (0)
+I (2990) wifi:state: assoc -> run (10)
+I (3000) wifi:state: run -> init (2a0)
+I (3000) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (3000) wifi station: retry to connect to the AP[0m
+[0;32mI (3000) wifi station: connect to the AP fail[0m
+[0;32mI (5410) wifi station: retry to connect to the AP[0m
+[0;32mI (5410) wifi station: connect to the AP fail[0m
+I (5410) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (5420) wifi:state: init -> auth (b0)
+I (6380) wifi:state: auth -> assoc (0)
+I (6380) wifi:state: assoc -> run (10)
+I (6410) wifi:connected with FD-56, aid = 9, channel 1, BW20, bssid = 8e:4c:55:fc:17:19
+I (6410) wifi:security: WPA3-SAE, phy: bgn, rssi: -41
+I (6410) wifi:pm start, type: 1
+
+I (6420) wifi:<ba-add>idx:0 (ifx:0, 8e:4c:55:fc:17:19), tid:0, ssn:0, winSize:64
+I (6480) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (7410) esp_netif_handlers: sta ip: 192.168.97.125, mask: 255.255.255.0, gw: 192.168.97.205[0m
+[0;32mI (7410) wifi station: got ip:192.168.97.125[0m
+[0;33mW (7410) wifi station: connected to ap SSID: FD-56 || password: Ashish@143[0m
+I (7550) wifi:<ba-add>idx:1 (ifx:0, 8e:4c:55:fc:17:19), tid:4, ssn:0, winSize:64
+[0;31mE (8730) FirebaseApp: Error while performing request esp_err_t code=0x0 | status_code=400[0m
+[0;31mE (8730) FirebaseApp: request: url=https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=EWOYqXigoEX1vVbE4TN32E2RGya2RrK6aqFb9WH5 
+method=1 
+post_field={"email":"innovateyourself2build@gmail.com", "password":"12345678", "returnSecureToken": true}[0m
+[0;31mE (8750) FirebaseApp: response=
+{
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "errors": [
+      {
+        "message": "API key not valid. Please pass a valid API key.",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "identitytoolkit.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+[0m
+[0;31mE (8810) FirebaseApp: Failed to get refresh token[0m
+[0;32mI (10680) RTDB: PUT successful[0m
+[0;32mI (11090) RTDB: PUT successful[0m
+[0;32mI (11510) RTDB: PUT successful[0m
+[0;32mI (12120) RTDB: PATCH successful[0m
+[0;32mI (12530) RTDB: Data with path=person3 acquired[0m
+[0;32mI (12530) MAIN: person3 as json string: 
+{"age":23,"name":"Ashu","random_float":5.9500000000000002}
+[0m
+{
+	"age" : 23,
+	"name" : "Ashu",
+	"random_float" : 5.9500000000000002
+}
+age, name, random_float, 
+[0;32mI (13960) RTDB: Data with path=person3 acquired[0m
+[0;32mI (14370) RTDB: Data with path=person3 acquired[0m
+[0;32mI (14780) RTDB: Data with path=person3 acquired[0m
+[0;32mI (15190) RTDB: Data with path=person3 acquired[0m
+[0;32mI (15600) RTDB: Data with path=person3 acquired[0m
+[0;32mI (16010) RTDB: Data with path=person3 acquired[0m
+[0;32mI (16420) RTDB: Data with path=person3 acquired[0m
+[0;32mI (16830) RTDB: Data with path=person3 acquired[0m
+[0;32mI (17240) RTDB: Data with path=person3 acquired[0m
+[0;32mI (17650) RTDB: Data with path=person3 acquired[0m
+[0;32mI (18060) RTDB: Data with path=person3 acquired[0m
+[0;32mI (18470) RTDB: Data with path=person3 acquired[0m
+[0;32mI (19900) RTDB: Data with path=person3 acquired[0m
+[0;32mI (20310) RTDB: Data with path=person3 acquired[0m
+[0;32mI (20720) RTDB: Data with path=person3 acquired[0m
+[0;32mI (21130) RTDB: Data with path=person3 acquired[0m
+[0;32mI (21540) RTDB: Data with path=person3 acquired[0m
+[0;32mI (21950) RTDB: Data with path=person3 acquired[0m
+[0;32mI (22360) RTDB: Data with path=person3 acquired[0m
+[0;32mI (22770) RTDB: Data with path=person3 acquired[0m
+[0;32mI (23180) RTDB: Data with path=person3 acquired[0m
+[0;32mI (23590) RTDB: Data with path=person3 acquired[0m
+[0;32mI (24000) RTDB: Data with path=person3 acquired[0m
+[0;32mI (24410) RTDB: Data with path=person3 acquired[0m
+[0;32mI (24820) RTDB: Data with path=person3 acquired[0m
+[0;32mI (25230) RTDB: Data with path=person3 acquired[0m
+[0;32mI (25630) RTDB: Data with path=person3 acquired[0m
+[0;32mI (26050) RTDB: Data with path=person3 acquired[0m
+[0;32mI (26450) RTDB: Data with path=person3 acquired[0m
+[0;32mI (26870) RTDB: Data with path=person3 acquired[0m
+[0;32mI (27270) RTDB: Data with path=person3 acquired[0m
+[0;32mI (27680) RTDB: Data with path=person3 acquired[0m
+[0;32mI (28090) RTDB: Data with path=person3 acquired[0m
+[0;32mI (28500) RTDB: Data with path=person3 acquired[0m
+[0;32mI (28910) RTDB: Data with path=person3 acquired[0m
+[0;32mI (29320) RTDB: Data with path=person3 acquired[0m
+[0;32mI (29730) RTDB: Data with path=person3 acquired[0m
+[0;32mI (30140) RTDB: Data with path=person3 acquired[0m
+[0;32mI (30550) RTDB: Data with path=person3 acquired[0m
+[0;32mI (30960) RTDB: Data with path=person3 acquired[0m
+[0;32mI (31370) RTDB: Data with path=person3 acquired[0m
+[0;32mI (31780) RTDB: Data with path=person3 acquired[0m
+[0;32mI (32190) RTDB: Data with path=person3 acquired[0m
+[0;32mI (32600) RTDB: Data with path=person3 acquired[0m
+[0;32mI (33010) RTDB: Data with path=person3 acquired[0m
+[0;32mI (33420) RTDB: Data with path=person3 acquired[0m
+[0;32mI (33830) RTDB: Data with path=person3 acquired[0m
+[0;32mI (34240) RTDB: Data with path=person3 acquired[0m
+[0;32mI (34650) RTDB: Data with path=person3 acquired[0m
+[0;32mI (35060) RTDB: Data with path=person3 acquired[0m
+[0;32mI (35470) RTDB: Data with path=person3 acquired[0m
+[0;32mI (35880) RTDB: Data with path=person3 acquired[0m
+[0;32mI (36290) RTDB: Data with path=person3 acquired[0m
+[0;32mI (36700) RTDB: Data with path=person3 acquired[0m
+[0;32mI (37100) RTDB: Data with path=person3 acquired[0m
+[0;32mI (37510) RTDB: Data with path=person3 acquired[0m
+[0;32mI (37920) RTDB: Data with path=person3 acquired[0m
+[0;32mI (38330) RTDB: Data with path=person3 acquired[0m
+[0;32mI (38740) RTDB: Data with path=person3 acquired[0m
+[0;32mI (39150) RTDB: Data with path=person3 acquired[0m
+[0;32mI (39560) RTDB: Data with path=person3 acquired[0m
+[0;32mI (39970) RTDB: Data with path=person3 acquired[0m
+[0;32mI (40380) RTDB: Data with path=person3 acquired[0m
+[0;32mI (40790) RTDB: Data with path=person3 acquired[0m
+[0;32mI (41200) RTDB: Data with path=person3 acquired[0m
+[0;32mI (41610) RTDB: Data with path=person3 acquired[0m
+[0;32mI (42020) RTDB: Data with path=person3 acquired[0m
+[0;32mI (42430) RTDB: Data with path=person3 acquired[0m
+[0;32mI (42840) RTDB: Data with path=person3 acquired[0m
+[0;32mI (43250) RTDB: Data with path=person3 acquired[0m
+[0;32mI (43660) RTDB: Data with path=person3 acquired[0m
+[0;32mI (44070) RTDB: Data with path=person3 acquired[0m
+[0;32mI (44480) RTDB: Data with path=person3 acquired[0m
+[0;32mI (44890) RTDB: Data with path=person3 acquired[0m
+[0;32mI (45300) RTDB: Data with path=person3 acquired[0m
+[0;32mI (45700) RTDB: Data with path=person3 acquired[0m
+[0;32mI (46120) RTDB: Data with path=person3 acquired[0m
+[0;32mI (46530) RTDB: Data with path=person3 acquired[0m
+[0;32mI (46930) RTDB: Data with path=person3 acquired[0m
+[0;32mI (47340) RTDB: Data with path=person3 acquired[0m
+[0;32mI (47750) RTDB: Data with path=person3 acquired[0m
+[0;32mI (48160) RTDB: Data with path=person3 acquired[0m
+[0;32mI (48570) RTDB: Data with path=person3 acquired[0m
+[0;32mI (48980) RTDB: Data with path=person3 acquired[0m
+[0;32mI (49390) RTDB: Data with path=person3 acquired[0m
+[0;32mI (49800) RTDB: Data with path=person3 acquired[0m
+[0;32mI (50210) RTDB: Data with path=person3 acquired[0m
+[0;32mI (50620) RTDB: Data with path=person3 acquired[0m
+[0;32mI (51030) RTDB: Data with path=person3 acquired[0m
+[0;32mI (51440) RTDB: Data with path=person3 acquired[0m
+[0;32mI (51850) RTDB: Data with path=person3 acquired[0m
+[0;32mI (52260) RTDB: Data with path=person3 acquired[0m
+[0;32mI (52670) RTDB: Data with path=person3 acquired[0m
+[0;32mI (53080) RTDB: Data with path=person3 acquired[0m
+[0;32mI (53490) RTDB: Data with path=person3 acquired[0m
+[0;32mI (55330) RTDB: Data with path=person3 acquired[0m
+[0;32mI (55740) RTDB: Data with path=person3 acquired[0m
+[0;32mI (56150) RTDB: Data with path=person3 acquired[0m
+[0;32mI (56560) RTDB: Data with path=person3 acquired[0m
+[0;32mI (56970) RTDB: Data with path=person3 acquired[0m
+[0;32mI (57380) RTDB: Data with path=person3 acquired[0m
+[0;32mI (57790) RTDB: Data with path=person3 acquired[0m
+[0;32mI (57790) MAIN: person3 as json string: 
+{"age":25,"name":"Ashu","random_float":5.9500000000000002}
+[0m
+{
+	"age" : 25,
+	"name" : "Ashu",
+	"random_float" : 5.9500000000000002
+}
+age, name, random_float, 
+[0;32mI (59220) RTDB: Data with path=person3 acquired[0m
+[0;32mI (59630) RTDB: Data with path=person3 acquired[0m
+[0;32mI (60040) RTDB: Data with path=person3 acquired[0m
+[0;32mI (60450) RTDB: Data with path=person3 acquired[0m
+[0;32mI (60860) RTDB: Data with path=person3 acquired[0m
+[0;32mI (61270) RTDB: Data with path=person3 acquired[0m
+[0;32mI (61680) RTDB: Data with path=person3 acquired[0m
+[0;32mI (62090) RTDB: Data with path=person3 acquired[0m
+[0;32mI (62500) RTDB: Data with path=person3 acquired[0m
+[0;32mI (62910) RTDB: Data with path=person3 acquired[0m
+[0;32mI (63320) RTDB: Data with path=person3 acquired[0m
+[0;32mI (63730) RTDB: Data with path=person3 acquired[0m
+[0;32mI (64140) RTDB: Data with path=person3 acquired[0m
+[0;32mI (64550) RTDB: Data with path=person3 acquired[0m
+[0;32mI (64960) RTDB: Data with path=person3 acquired[0m
+[0;32mI (65370) RTDB: Data with path=person3 acquired[0m
+[0;32mI (65780) RTDB: Data with path=person3 acquired[0m
+[0;32mI (66180) RTDB: Data with path=person3 acquired[0m
+[0;32mI (66600) RTDB: Data with path=person3 acquired[0m
+[0;32mI (67000) RTDB: Data with path=person3 acquired[0m
+[0;32mI (67420) RTDB: Data with path=person3 acquired[0m
+[0;32mI (67820) RTDB: Data with path=person3 acquired[0m
+[0;32mI (67820) MAIN: person3 as json string: 
+{"age":25,"name":"ASHISH","random_float":5.9500000000000002}
+[0m
+{
+	"age" : 25,
+	"name" : "ASHISH",
+	"random_float" : 5.9500000000000002
+}
+age, name, random_float, 
+[0;32mI (69260) RTDB: Data with path=person3 acquired[0m
+[0;32mI (69670) RTDB: Data with path=person3 acquired[0m
+[0;32mI (70080) RTDB: Data with path=person3 acquired[0m
+[0;32mI (70490) RTDB: Data with path=person3 acquired[0m
+[0;32mI (70900) RTDB: Data with path=person3 acquired[0m
+[0;32mI (71310) RTDB: Data with path=person3 acquired[0m
+[0;32mI (71720) RTDB: Data with path=person3 acquired[0m
+[0;32mI (72120) RTDB: Data with path=person3 acquired[0m
+[0;32mI (72530) RTDB: Data with path=person3 acquired[0m
+[0;32mI (72940) RTDB: Data with path=person3 acquired[0m
+[0;32mI (73350) RTDB: Data with path=person3 acquired[0m
+[0;32mI (73760) RTDB: Data with path=person3 acquired[0m
+[0;32mI (74170) RTDB: Data with path=person3 acquired[0m
+[0;32mI (74580) RTDB: Data with path=person3 acquired[0m
+[0;32mI (74990) RTDB: Data with path=person3 acquired[0m
+[0;32mI (75400) RTDB: Data with path=person3 acquired[0m
+[0;32mI (75810) RTDB: Data with path=person3 acquired[0m
+[0;32mI (76220) RTDB: Data with path=person3 acquired[0m
+[0;32mI (76630) RTDB: Data with path=person3 acquired[0m
+[0;32mI (77040) RTDB: Data with path=person3 acquired[0m
+[0;32mI (77450) RTDB: Data with path=person3 acquired[0m
+[0;32mI (77860) RTDB: Data with path=person3 acquired[0m
+[0;32mI (78270) RTDB: Data with path=person3 acquired[0m
+[0;32mI (78680) RTDB: Data with path=person3 acquired[0m
+[0;32mI (79090) RTDB: Data with path=person3 acquired[0m
+[0;32mI (79500) RTDB: Data with path=person3 acquired[0m
+[0;32mI (79910) RTDB: Data with path=person3 acquired[0m
+[0;32mI (80320) RTDB: Data with path=person3 acquired[0m
+[0;32mI (80730) RTDB: Data with path=person3 acquired[0m
+[0;32mI (81140) RTDB: Data with path=person3 acquired[0m
+[0;32mI (81550) RTDB: Data with path=person3 acquired[0m
+[0;32mI (81960) RTDB: Data with path=person3 acquired[0m
+[0;32mI (82370) RTDB: Data with path=person3 acquired[0m
+[0;32mI (82770) RTDB: Data with path=person3 acquired[0m
+[0;32mI (83190) RTDB: Data with path=person3 acquired[0m
+[0;32mI (83590) RTDB: Data with path=person3 acquired[0m
+[0;32mI (84000) RTDB: Data with path=person3 acquired[0m
+[0;32mI (84410) RTDB: Data with path=person3 acquired[0m
+[0;32mI (84820) RTDB: Data with path=person3 acquired[0m
+[0;32mI (85230) RTDB: Data with path=person3 acquired[0m
+[0;32mI (85640) RTDB: Data with path=person3 acquired[0m
+[0;32mI (86050) RTDB: Data with path=person3 acquired[0m
+[0;32mI (86460) RTDB: Data with path=person3 acquired[0m
+[0;32mI (86870) RTDB: Data with path=person3 acquired[0m
+[0;32mI (87280) RTDB: Data with path=person3 acquired[0m
+[0;32mI (87690) RTDB: Data with path=person3 acquired[0m
+[0;32mI (88100) RTDB: Data with path=person3 acquired[0m
+[0;32mI (88510) RTDB: Data with path=person3 acquired[0m
+[0;32mI (88920) RTDB: Data with path=person3 acquired[0m
+[0;32mI (89330) RTDB: Data with path=person3 acquired[0m
+[0;32mI (89740) RTDB: Data with path=person3 acquired[0m
+[0;32mI (90150) RTDB: Data with path=person3 acquired[0m
+[0;32mI (90560) RTDB: Data with path=person3 acquired[0m
+[0;32mI (90970) RTDB: Data with path=person3 acquired[0m
+[0;32mI (91380) RTDB: Data with path=person3 acquired[0m
+[0;32mI (91790) RTDB: Data with path=person3 acquired[0m
+[0;32mI (92190) RTDB: Data with path=person3 acquired[0m
+[0;32mI (92600) RTDB: Data with path=person3 acquired[0m
+[0;32mI (93220) RTDB: Data with path=person3 acquired[0m
+[0;32mI (93630) RTDB: Data with path=person3 acquired[0m
+[0;32mI (94040) RTDB: Data with path=person3 acquired[0m
+[0;32mI (94450) RTDB: Data with path=person3 acquired[0m
+[0;32mI (94860) RTDB: Data with path=person3 acquired[0m
+[0;32mI (95270) RTDB: Data with path=person3 acquired[0m
+[0;32mI (95680) RTDB: Data with path=person3 acquired[0m
+[0;32mI (96090) RTDB: Data with path=person3 acquired[0m
+[0;32mI (96500) RTDB: Data with path=person3 acquired[0m
+[0;32mI (96900) RTDB: Data with path=person3 acquired[0m
+[0;32mI (97320) RTDB: Data with path=person3 acquired[0m
+[0;32mI (97720) RTDB: Data with path=person3 acquired[0m
+[0;32mI (98140) RTDB: Data with path=person3 acquired[0m
+[0;32mI (99980) RTDB: Data with path=person3 acquired[0m
+[0;32mI (100390) RTDB: Data with path=person3 acquired[0m
+[0;32mI (100800) RTDB: Data with path=person3 acquired[0m
+[0;32mI (101210) RTDB: Data with path=person3 acquired[0m
+[0;32mI (101620) RTDB: Data with path=person3 acquired[0m
+[0;32mI (102030) RTDB: Data with path=person3 acquired[0m
+[0;32mI (102440) RTDB: Data with path=person3 acquired[0m
+[0;32mI (102850) RTDB: Data with path=person3 acquired[0m
+[0;32mI (103260) RTDB: Data with path=person3 acquired[0m
+[0;32mI (103660) RTDB: Data with path=person3 acquired[0m
+[0;32mI (104070) RTDB: Data with path=person3 acquired[0m
+[0;32mI (104480) RTDB: Data with path=person3 acquired[0m
+[0;32mI (104890) RTDB: Data with path=person3 acquired[0m
+[0;32mI (105300) RTDB: Data with path=person3 acquired[0m
+[0;32mI (105710) RTDB: Data with path=person3 acquired[0m
+[0;32mI (106120) RTDB: Data with path=person3 acquired[0m
+[0;32mI (106530) RTDB: Data with path=person3 acquired[0m
+[0;32mI (106940) RTDB: Data with path=person3 acquired[0m
+[0;32mI (107350) RTDB: Data with path=person3 acquired[0m
+[0;32mI (107760) RTDB: Data with path=person3 acquired[0m
+[0;32mI (108170) RTDB: Data with path=person3 acquired[0m
+[0;32mI (108580) RTDB: Data with path=person3 acquired[0m
+[0;32mI (108990) RTDB: Data with path=person3 acquired[0m
+[0;32mI (109400) RTDB: Data with path=person3 acquired[0m
+[0;32mI (109810) RTDB: Data with path=person3 acquired[0m
+[0;32mI (110220) RTDB: Data with path=person3 acquired[0m
+[0;32mI (110630) RTDB: Data with path=person3 acquired[0m
+[0;32mI (111040) RTDB: Data with path=person3 acquired[0m
+[0;32mI (111450) RTDB: Data with path=person3 acquired[0m
+[0;32mI (111860) RTDB: Data with path=person3 acquired[0m
+[0;32mI (112270) RTDB: Data with path=person3 acquired[0m
+[0;32mI (112680) RTDB: Data with path=person3 acquired[0m
+[0;32mI (113080) RTDB: Data with path=person3 acquired[0m
+[0;32mI (113490) RTDB: Data with path=person3 acquired[0m
+[0;32mI (113900) RTDB: Data with path=person3 acquired[0m
+[0;32mI (114320) RTDB: Data with path=person3 acquired[0m
+[0;32mI (114720) RTDB: Data with path=person3 acquired[0m
+[0;32mI (115130) RTDB: Data with path=person3 acquired[0m
+[0;32mI (115540) RTDB: Data with path=person3 acquired[0m
+[0;32mI (115950) RTDB: Data with path=person3 acquired[0m
+[0;32mI (116360) RTDB: Data with path=person3 acquired[0m
+[0;32mI (116770) RTDB: Data with path=person3 acquired[0m
+[0;32mI (117180) RTDB: Data with path=person3 acquired[0m
+[0;32mI (117590) RTDB: Data with path=person3 acquired[0m
+[0;32mI (118000) RTDB: Data with path=person3 acquired[0m
+[0;32mI (118410) RTDB: Data with path=person3 acquired[0m
+[0;32mI (121280) RTDB: Data with path=person3 acquired[0m
+[0;32mI (121690) RTDB: Data with path=person3 acquired[0m
+[0;32mI (122100) RTDB: Data with path=person3 acquired[0m
+[0;32mI (122510) RTDB: Data with path=person3 acquired[0m
+[0;32mI (122920) RTDB: Data with path=person3 acquired[0m
+[0;32mI (123330) RTDB: Data with path=person3 acquired[0m
+[0;32mI (123730) RTDB: Data with path=person3 acquired[0m
+[0;32mI (124140) RTDB: Data with path=person3 acquired[0m
+[0;32mI (124550) RTDB: Data with path=person3 acquired[0m
+[0;32mI (124960) RTDB: Data with path=person3 acquired[0m
+[0;32mI (125780) RTDB: Data with path=person3 acquired[0m
+[0;32mI (126190) RTDB: Data with path=person3 acquired[0m
+[0;32mI (126600) RTDB: Data with path=person3 acquired[0m
+[0;32mI (127010) RTDB: Data with path=person3 acquired[0m
+[0;32mI (127420) RTDB: Data with path=person3 acquired[0m
+[0;32mI (127830) RTDB: Data with path=person3 acquired[0m
+[0;32mI (128240) RTDB: Data with path=person3 acquired[0m
+[0;32mI (128240) MAIN: person3 as json string: 
+{"age":25,"name":"ASHISH","random_float":43567.699999999997}
+[0m
+{
+	"age" : 25,
+	"name" : "ASHISH",
+	"random_float" : 43567.699999999997
+}
+age, name, random_float, 
+[0;32mI (129670) RTDB: Data with path=person3 acquired[0m
+[0;32mI (130080) RTDB: Data with path=person3 acquired[0m
+[0;32mI (130490) RTDB: Data with path=person3 acquired[0m
+[0;32mI (130900) RTDB: Data with path=person3 acquired[0m
+[0;32mI (131310) RTDB: Data with path=person3 acquired[0m
+[0;32mI (131720) RTDB: Data with path=person3 acquired[0m
+[0;32mI (132130) RTDB: Data with path=person3 acquired[0m
+[0;32mI (132540) RTDB: Data with path=person3 acquired[0m
+[0;32mI (132950) RTDB: Data with path=person3 acquired[0m
+[0;32mI (133360) RTDB: Data with path=person3 acquired[0m
+[0;32mI (133770) RTDB: Data with path=person3 acquired[0m
+[0;32mI (134180) RTDB: Data with path=person3 acquired[0m
+[0;32mI (134590) RTDB: Data with path=person3 acquired[0m
+[0;32mI (135000) RTDB: Data with path=person3 acquired[0m
+[0;32mI (135410) RTDB: Data with path=person3 acquired[0m
+[0;32mI (135820) RTDB: Data with path=person3 acquired[0m
+[0;32mI (136230) RTDB: Data with path=person3 acquired[0m
+[0;32mI (136640) RTDB: Data with path=person3 acquired[0m
+[0;32mI (137050) RTDB: Data with path=person3 acquired[0m
+[0;32mI (137460) RTDB: Data with path=person3 acquired[0m
+[0;32mI (137870) RTDB: Data with path=person3 acquired[0m
+[0;32mI (138280) RTDB: Data with path=person3 acquired[0m
+[0;32mI (138680) RTDB: Data with path=person3 acquired[0m
+[0;32mI (139090) RTDB: Data with path=person3 acquired[0m
+[0;32mI (139510) RTDB: Data with path=person3 acquired[0m
+[0;32mI (139910) RTDB: Data with path=person3 acquired[0m
+[0;32mI (140320) RTDB: Data with path=person3 acquired[0m
+[0;32mI (140730) RTDB: Data with path=person3 acquired[0m
+[0;32mI (141140) RTDB: Data with path=person3 acquired[0m
+[0;32mI (141550) RTDB: Data with path=person3 acquired[0m
+[0;32mI (141960) RTDB: Data with path=person3 acquired[0m
+[0;32mI (142370) RTDB: Data with path=person3 acquired[0m
+[0;32mI (142780) RTDB: Data with path=person3 acquired[0m
+[0;32mI (143190) RTDB: Data with path=person3 acquired[0m
+[0;32mI (143600) RTDB: Data with path=person3 acquired[0m
+[0;32mI (144010) RTDB: Data with path=person3 acquired[0m
+[0;32mI (144430) RTDB: Data with path=person3 acquired[0m
+[0;32mI (146260) RTDB: Data with path=person3 acquired[0m
+[0;32mI (146670) RTDB: Data with path=person3 acquired[0m
+[0;32mI (147080) RTDB: Data with path=person3 acquired[0m
+[0;32mI (147900) RTDB: Data with path=person3 acquired[0m
+[0;32mI (149130) RTDB: Data with path=person3 acquired[0m
+[0;32mI (149540) RTDB: Data with path=person3 acquired[0m
+[0;32mI (149950) RTDB: Data with path=person3 acquired[0m
+[0;32mI (150360) RTDB: Data with path=person3 acquired[0m
+[0;32mI (150770) RTDB: Data with path=person3 acquired[0m
+[0;32mI (151180) RTDB: Data with path=person3 acquired[0m
+[0;32mI (151590) RTDB: Data with path=person3 acquired[0m
+[0;32mI (152410) RTDB: Data with path=person3 acquired[0m
+[0;32mI (152820) RTDB: Data with path=person3 acquired[0m
+[0;32mI (153220) RTDB: Data with path=person3 acquired[0m
+[0;32mI (153640) RTDB: Data with path=person3 acquired[0m
+[0;32mI (154050) RTDB: Data with path=person3 acquired[0m
+[0;32mI (154450) RTDB: Data with path=person3 acquired[0m
+[0;32mI (154860) RTDB: Data with path=person3 acquired[0m
+[0;32mI (155270) RTDB: Data with path=person3 acquired[0m
+[0;32mI (155680) RTDB: Data with path=person3 acquired[0m
+[0;32mI (156090) RTDB: Data with path=person3 acquired[0m
+[0;32mI (156500) RTDB: Data with path=person3 acquired[0m
+[0;32mI (156910) RTDB: Data with path=person3 acquired[0m
+[0;32mI (157320) RTDB: Data with path=person3 acquired[0m
+[0;32mI (157730) RTDB: Data with path=person3 acquired[0m
+[0;32mI (158140) RTDB: Data with path=person3 acquired[0m
+[0;32mI (158550) RTDB: Data with path=person3 acquired[0m
+[0;32mI (158960) RTDB: Data with path=person3 acquired[0m
+[0;32mI (159370) RTDB: Data with path=person3 acquired[0m
+[0;32mI (159780) RTDB: Data with path=person3 acquired[0m
+[0;32mI (160190) RTDB: Data with path=person3 acquired[0m
+[0;32mI (160600) RTDB: Data with path=person3 acquired[0m
+[0;32mI (161010) RTDB: Data with path=person3 acquired[0m
+[0;32mI (161420) RTDB: Data with path=person3 acquired[0m
+[0;32mI (162240) RTDB: Data with path=person3 acquired[0m
+[0;32mI (162650) RTDB: Data with path=person3 acquired[0m
+[0;32mI (163470) RTDB: Data with path=person3 acquired[0m
+[0;32mI (163880) RTDB: Data with path=person3 acquired[0m
+[0;32mI (164280) RTDB: Data with path=person3 acquired[0m
+[0;32mI (164700) RTDB: Data with path=person3 acquired[0m
+[0;32mI (165100) RTDB: Data with path=person3 acquired[0m
+[0;32mI (165510) RTDB: Data with path=person3 acquired[0m
+[0;32mI (165920) RTDB: Data with path=person3 acquired[0m
+[0;32mI (166740) RTDB: Data with path=person3 acquired[0m
+[0;32mI (167150) RTDB: Data with path=person3 acquired[0m
+[0;32mI (167560) RTDB: Data with path=person3 acquired[0m
+[0;32mI (167970) RTDB: Data with path=person3 acquired[0m
+[0;32mI (168380) RTDB: Data with path=person3 acquired[0m
+[0;32mI (168790) RTDB: Data with path=person3 acquired[0m
+[0;32mI (169610) RTDB: Data with path=person3 acquired[0m
+[0;32mI (170020) RTDB: Data with path=person3 acquired[0m
+[0;32mI (170430) RTDB: Data with path=person3 acquired[0m
+[0;32mI (170840) RTDB: Data with path=person3 acquired[0m
+[0;32mI (171250) RTDB: Data with path=person3 acquired[0m
+[0;32mI (171660) RTDB: Data with path=person3 acquired[0m
+[0;32mI (172070) RTDB: Data with path=person3 acquired[0m
+[0;32mI (172480) RTDB: Data with path=person3 acquired[0m
+[0;32mI (172890) RTDB: Data with path=person3 acquired[0m
+[0;32mI (173700) RTDB: Data with path=person3 acquired[0m
+[0;32mI (174120) RTDB: Data with path=person3 acquired[0m
+[0;32mI (174520) RTDB: Data with path=person3 acquired[0m
+[0;32mI (175340) RTDB: Data with path=person3 acquired[0m
+[0;32mI (175750) RTDB: Data with path=person3 acquired[0m
+[0;32mI (176160) RTDB: Data with path=person3 acquired[0m
+[0;32mI (176570) RTDB: Data with path=person3 acquired[0m
+[0;32mI (176980) RTDB: Data with path=person3 acquired[0m
+[0;32mI (177800) RTDB: Data with path=person3 acquired[0m
+[0;32mI (178210) RTDB: Data with path=person3 acquired[0m
+[0;32mI (179030) RTDB: Data with path=person3 acquired[0m
+[0;32mI (180260) RTDB: Data with path=person3 acquired[0m
+[0;32mI (182100) RTDB: Data with path=person3 acquired[0m
+[0;32mI (185180) RTDB: Data with path=person3 acquired[0m
+[0;32mI (185580) RTDB: Data with path=person3 acquired[0m
+[0;32mI (185990) RTDB: Data with path=person3 acquired[0m
+[0;32mI (186400) RTDB: Data with path=person3 acquired[0m
+[0;32mI (186810) RTDB: Data with path=person3 acquired[0m
+[0;32mI (187220) RTDB: Data with path=person3 acquired[0m
+[0;32mI (187630) RTDB: Data with path=person3 acquired[0m
+[0;32mI (188040) RTDB: Data with path=person3 acquired[0m
+[0;32mI (188450) RTDB: Data with path=person3 acquired[0m
+[0;32mI (188860) RTDB: Data with path=person3 acquired[0m
+[0;32mI (189270) RTDB: Data with path=person3 acquired[0m
+[0;32mI (189680) RTDB: Data with path=person3 acquired[0m
+[0;32mI (190090) RTDB: Data with path=person3 acquired[0m
+[0;32mI (190500) RTDB: Data with path=person3 acquired[0m
+[0;32mI (190910) RTDB: Data with path=person3 acquired[0m
+[0;32mI (191320) RTDB: Data with path=person3 acquired[0m
+[0;32mI (191730) RTDB: Data with path=person3 acquired[0m
+[0;32mI (192550) RTDB: Data with path=person3 acquired[0m
+[0;32mI (192960) RTDB: Data with path=person3 acquired[0m
+[0;32mI (193780) RTDB: Data with path=person3 acquired[0m
+[0;32mI (194190) RTDB: Data with path=person3 acquired[0m
+[0;32mI (194600) RTDB: Data with path=person3 acquired[0m
+[0;32mI (195000) RTDB: Data with path=person3 acquired[0m
+[0;32mI (195410) RTDB: Data with path=person3 acquired[0m
+[0;32mI (195830) RTDB: Data with path=person3 acquired[0m
+[0;32mI (196240) RTDB: Data with path=person3 acquired[0m
+[0;32mI (196650) RTDB: Data with path=person3 acquired[0m
+[0;32mI (197050) RTDB: Data with path=person3 acquired[0m
+[0;32mI (197470) RTDB: Data with path=person3 acquired[0m
+[0;32mI (199310) RTDB: Data with path=person3 acquired[0m
+[0;32mI (199710) RTDB: Data with path=person3 acquired[0m
+[0;32mI (200120) RTDB: Data with path=person3 acquired[0m
+[0;32mI (200540) RTDB: Data with path=person3 acquired[0m
+[0;32mI (200940) RTDB: Data with path=person3 acquired[0m
+[0;32mI (201350) RTDB: Data with path=person3 acquired[0m
+[0;32mI (201760) RTDB: Data with path=person3 acquired[0m
+[0;32mI (202170) RTDB: Data with path=person3 acquired[0m
+[0;32mI (202580) RTDB: Data with path=person3 acquired[0m
+[0;32mI (202990) RTDB: Data with path=person3 acquired[0m
+[0;32mI (203400) RTDB: Data with path=person3 acquired[0m
+[0;32mI (203810) RTDB: Data with path=person3 acquired[0m
+[0;32mI (204220) RTDB: Data with path=person3 acquired[0m
+[0;32mI (204630) RTDB: Data with path=person3 acquired[0m
+[0;32mI (205040) RTDB: Data with path=person3 acquired[0m
+[0;32mI (205450) RTDB: Data with path=person3 acquired[0m
+[0;32mI (205860) RTDB: Data with path=person3 acquired[0m
+[0;32mI (206270) RTDB: Data with path=person3 acquired[0m
+[0;32mI (206680) RTDB: Data with path=person3 acquired[0m
+[0;32mI (207090) RTDB: Data with path=person3 acquired[0m
+[0;32mI (207500) RTDB: Data with path=person3 acquired[0m
+[0;32mI (207910) RTDB: Data with path=person3 acquired[0m
+[0;32mI (208320) RTDB: Data with path=person3 acquired[0m
+[0;32mI (208730) RTDB: Data with path=person3 acquired[0m
+[0;32mI (209140) RTDB: Data with path=person3 acquired[0m
+[0;32mI (209540) RTDB: Data with path=person3 acquired[0m
+[0;32mI (209960) RTDB: Data with path=person3 acquired[0m
+[0;32mI (210370) RTDB: Data with path=person3 acquired[0m
+[0;32mI (210770) RTDB: Data with path=person3 acquired[0m
+[0;32mI (211180) RTDB: Data with path=person3 acquired[0m
+[0;32mI (211590) RTDB: Data with path=person3 acquired[0m
+[0;32mI (212000) RTDB: Data with path=person3 acquired[0m
+[0;32mI (212410) RTDB: Data with path=person3 acquired[0m
+[0;32mI (212830) RTDB: Data with path=person3 acquired[0m
+[0;32mI (213230) RTDB: Data with path=person3 acquired[0m
+[0;32mI (213640) RTDB: Data with path=person3 acquired[0m
+[0;32mI (214050) RTDB: Data with path=person3 acquired[0m
+[0;32mI (214460) RTDB: Data with path=person3 acquired[0m
+[0;32mI (214870) RTDB: Data with path=person3 acquired[0m
+[0;32mI (215280) RTDB: Data with path=person3 acquired[0m
+[0;32mI (215690) RTDB: Data with path=person3 acquired[0m
+[0;32mI (216100) RTDB: Data with path=person3 acquired[0m
+[0;32mI (216510) RTDB: Data with path=person3 acquired[0m
+[0;32mI (216920) RTDB: Data with path=person3 acquired[0m
+[0;32mI (217330) RTDB: Data with path=person3 acquired[0m
+[0;32mI (217740) RTDB: Data with path=person3 acquired[0m
+[0;32mI (218150) RTDB: Data with path=person3 acquired[0m
+[0;32mI (218560) RTDB: Data with path=person3 acquired[0m
+[0;32mI (218970) RTDB: Data with path=person3 acquired[0m
+[0;32mI (219380) RTDB: Data with path=person3 acquired[0m
+[0;32mI (219780) RTDB: Data with path=person3 acquired[0m
+[0;32mI (220200) RTDB: Data with path=person3 acquired[0m
+[0;32mI (221620) RTDB: Data with path=person3 acquired[0m
+[0;32mI (222040) RTDB: Data with path=person3 acquired[0m
+[0;32mI (222450) RTDB: Data with path=person3 acquired[0m
+[0;32mI (222860) RTDB: Data with path=person3 acquired[0m
+[0;32mI (223270) RTDB: Data with path=person3 acquired[0m
+[0;32mI (223680) RTDB: Data with path=person3 acquired[0m
+[0;32mI (224090) RTDB: Data with path=person3 acquired[0m
+[0;32mI (224500) RTDB: Data with path=person3 acquired[0m
+[0;32mI (224910) RTDB: Data with path=person3 acquired[0m
+[0;32mI (225320) RTDB: Data with path=person3 acquired[0m
+[0;32mI (225720) RTDB: Data with path=person3 acquired[0m
+[0;32mI (226130) RTDB: Data with path=person3 acquired[0m
+[0;32mI (226540) RTDB: Data with path=person3 acquired[0m
+[0;32mI (226950) RTDB: Data with path=person3 acquired[0m
+[0;32mI (227360) RTDB: Data with path=person3 acquired[0m
+[0;32mI (227770) RTDB: Data with path=person3 acquired[0m
+[0;32mI (228180) RTDB: Data with path=person3 acquired[0m
+[0;32mI (228590) RTDB: Data with path=person3 acquired[0m
+[0;32mI (229000) RTDB: Data with path=person3 acquired[0m
+[0;32mI (229410) RTDB: Data with path=person3 acquired[0m
+[0;32mI (229820) RTDB: Data with path=person3 acquired[0m
+[0;32mI (230230) RTDB: Data with path=person3 acquired[0m
+[0;32mI (230640) RTDB: Data with path=person3 acquired[0m
+[0;32mI (231050) RTDB: Data with path=person3 acquired[0m
+[0;32mI (231460) RTDB: Data with path=person3 acquired[0m
+[0;32mI (231870) RTDB: Data with path=person3 acquired[0m
+[0;32mI (232280) RTDB: Data with path=person3 acquired[0m
+[0;32mI (232690) RTDB: Data with path=person3 acquired[0m
+[0;32mI (233100) RTDB: Data with path=person3 acquired[0m
+[0;32mI (233510) RTDB: Data with path=person3 acquired[0m
+[0;32mI (233920) RTDB: Data with path=person3 acquired[0m
+[0;32mI (234330) RTDB: Data with path=person3 acquired[0m
+[0;32mI (234730) RTDB: Data with path=person3 acquired[0m
+[0;32mI (235140) RTDB: Data with path=person3 acquired[0m
+[0;32mI (235550) RTDB: Data with path=person3 acquired[0m
+[0;32mI (235970) RTDB: Data with path=person3 acquired[0m
+[0;32mI (236370) RTDB: Data with path=person3 acquired[0m
+[0;32mI (236780) RTDB: Data with path=person3 acquired[0m
+[0;32mI (237190) RTDB: Data with path=person3 acquired[0m
+[0;32mI (237600) RTDB: Data with path=person3 acquired[0m
+[0;32mI (238010) RTDB: Data with path=person3 acquired[0m
+[0;32mI (238420) RTDB: Data with path=person3 acquired[0m
+[0;32mI (238830) RTDB: Data with path=person3 acquired[0m
+[0;32mI (239240) RTDB: Data with path=person3 acquired[0m
+[0;32mI (239650) RTDB: Data with path=person3 acquired[0m
+[0;32mI (240060) RTDB: Data with path=person3 acquired[0m
+[0;32mI (240470) RTDB: Data with path=person3 acquired[0m
+[0;32mI (240890) RTDB: Data with path=person3 acquired[0m
+[0;32mI (242720) RTDB: Data with path=person3 acquired[0m
+[0;32mI (243130) RTDB: Data with path=person3 acquired[0m
+[0;32mI (243540) RTDB: Data with path=person3 acquired[0m
+[0;32mI (243950) RTDB: Data with path=person3 acquired[0m
+[0;32mI (244360) RTDB: Data with path=person3 acquired[0m
+[0;32mI (244770) RTDB: Data with path=person3 acquired[0m
+[0;32mI (245180) RTDB: Data with path=person3 acquired[0m
+[0;32mI (245590) RTDB: Data with path=person3 acquired[0m
+[0;32mI (246000) RTDB: Data with path=person3 acquired[0m
+[0;32mI (246410) RTDB: Data with path=person3 acquired[0m
+[0;32mI (246820) RTDB: Data with path=person3 acquired[0m
+[0;32mI (247230) RTDB: Data with path=person3 acquired[0m
+[0;32mI (247640) RTDB: Data with path=person3 acquired[0m
+[0;32mI (248050) RTDB: Data with path=person3 acquired[0m
+[0;32mI (248460) RTDB: Data with path=person3 acquired[0m
+[0;32mI (248870) RTDB: Data with path=person3 acquired[0m
+[0;32mI (249280) RTDB: Data with path=person3 acquired[0m
+[0;32mI (249690) RTDB: Data with path=person3 acquired[0m
+[0;32mI (250100) RTDB: Data with path=person3 acquired[0m
+[0;32mI (250510) RTDB: Data with path=person3 acquired[0m
+[0;32mI (250510) MAIN: person3 as json string: 
+{"age":23456,"name":"ASHISH","random_float":43567.699999999997}
+[0m
+{
+	"age" : 23456,
+	"name" : "ASHISH",
+	"random_float" : 43567.699999999997
+}
+age, name, random_float, 
+[0;32mI (251940) RTDB: Data with path=person3 acquired[0m
+[0;32mI (252350) RTDB: Data with path=person3 acquired[0m
+[0;32mI (252760) RTDB: Data with path=person3 acquired[0m
+[0;32mI (253170) RTDB: Data with path=person3 acquired[0m
+[0;32mI (253580) RTDB: Data with path=person3 acquired[0m
+[0;32mI (253990) RTDB: Data with path=person3 acquired[0m
+[0;32mI (254400) RTDB: Data with path=person3 acquired[0m
+[0;32mI (254810) RTDB: Data with path=person3 acquired[0m
+[0;32mI (255220) RTDB: Data with path=person3 acquired[0m
+[0;32mI (255620) RTDB: Data with path=person3 acquired[0m
+[0;32mI (256030) RTDB: Data with path=person3 acquired[0m
+[0;32mI (256450) RTDB: Data with path=person3 acquired[0m
+[0;32mI (256850) RTDB: Data with path=person3 acquired[0m
+[0;32mI (257260) RTDB: Data with path=person3 acquired[0m
+[0;32mI (257670) RTDB: Data with path=person3 acquired[0m
+[0;32mI (258080) RTDB: Data with path=person3 acquired[0m
+[0;32mI (258490) RTDB: Data with path=person3 acquired[0m
+[0;32mI (258900) RTDB: Data with path=person3 acquired[0m
+[0;32mI (259310) RTDB: Data with path=person3 acquired[0m
+[0;32mI (259720) RTDB: Data with path=person3 acquired[0m
+[0;32mI (260130) RTDB: Data with path=person3 acquired[0m
+[0;32mI (260540) RTDB: Data with path=person3 acquired[0m
+[0;32mI (260950) RTDB: Data with path=person3 acquired[0m
+[0;32mI (261360) RTDB: Data with path=person3 acquired[0m
+[0;32mI (261770) RTDB: Data with path=person3 acquired[0m
+[0;32mI (262180) RTDB: Data with path=person3 acquired[0m
+[0;32mI (262590) RTDB: Data with path=person3 acquired[0m
+[0;32mI (263000) RTDB: Data with path=person3 acquired[0m
+[0;32mI (263400) RTDB: Data with path=person3 acquired[0m
+[0;32mI (263820) RTDB: Data with path=person3 acquired[0m
+[0;32mI (264230) RTDB: Data with path=person3 acquired[0m
+[0;32mI (264640) RTDB: Data with path=person3 acquired[0m
+[0;32mI (265050) RTDB: Data with path=person3 acquired[0m
+[0;32mI (265460) RTDB: Data with path=person3 acquired[0m
+[0;32mI (265870) RTDB: Data with path=person3 acquired[0m
+[0;32mI (266280) RTDB: Data with path=person3 acquired[0m
+[0;32mI (266680) RTDB: Data with path=person3 acquired[0m
+[0;32mI (267090) RTDB: Data with path=person3 acquired[0m
+[0;32mI (267500) RTDB: Data with path=person3 acquired[0m
+[0;32mI (267910) RTDB: Data with path=person3 acquired[0m
+[0;32mI (268320) RTDB: Data with path=person3 acquired[0m
+[0;32mI (268730) RTDB: Data with path=person3 acquired[0m
+[0;32mI (269140) RTDB: Data with path=person3 acquired[0m
+[0;32mI (269550) RTDB: Data with path=person3 acquired[0m
+[0;32mI (269960) RTDB: Data with path=person3 acquired[0m
+[0;32mI (270370) RTDB: Data with path=person3 acquired[0m
+[0;32mI (270780) RTDB: Data with path=person3 acquired[0m
+[0;32mI (271190) RTDB: Data with path=person3 acquired[0m
+[0;32mI (271600) RTDB: Data with path=person3 acquired[0m
+[0;32mI (272010) RTDB: Data with path=person3 acquired[0m
+[0;32mI (272420) RTDB: Data with path=person3 acquired[0m
+[0;32mI (272830) RTDB: Data with path=person3 acquired[0m
+[0;32mI (273240) RTDB: Data with path=person3 acquired[0m
+[0;32mI (273650) RTDB: Data with path=person3 acquired[0m
+[0;32mI (274060) RTDB: Data with path=person3 acquired[0m
+[0;32mI (274470) RTDB: Data with path=person3 acquired[0m
+[0;32mI (274880) RTDB: Data with path=person3 acquired[0m
+[0;32mI (275290) RTDB: Data with path=person3 acquired[0m
+[0;32mI (275690) RTDB: Data with path=person3 acquired[0m
+[0;32mI (276110) RTDB: Data with path=person3 acquired[0m
+[0;32mI (276510) RTDB: Data with path=person3 acquired[0m
+[0;32mI (276920) RTDB: Data with path=person3 acquired[0m
+[0;32mI (277330) RTDB: Data with path=person3 acquired[0m
+[0;32mI (277740) RTDB: Data with path=person3 acquired[0m
+[0;32mI (278150) RTDB: Data with path=person3 acquired[0m
+[0;32mI (278560) RTDB: Data with path=person3 acquired[0m
+[0;32mI (278970) RTDB: Data with path=person3 acquired[0m
+[0;32mI (279380) RTDB: Data with path=person3 acquired[0m
+[0;32mI (279790) RTDB: Data with path=person3 acquired[0m
+[0;32mI (280200) RTDB: Data with path=person3 acquired[0m
+[0;32mI (280610) RTDB: Data with path=person3 acquired[0m
+[0;32mI (281020) RTDB: Data with path=person3 acquired[0m
+[0;32mI (281430) RTDB: Data with path=person3 acquired[0m
+[0;32mI (281840) RTDB: Data with path=person3 acquired[0m
+[0;32mI (282250) RTDB: Data with path=person3 acquired[0m
+[0;32mI (282660) RTDB: Data with path=person3 acquired[0m
+[0;32mI (283070) RTDB: Data with path=person3 acquired[0m
+[0;32mI (283480) RTDB: Data with path=person3 acquired[0m
+[0;32mI (283890) RTDB: Data with path=person3 acquired[0m
+[0;32mI (284300) RTDB: Data with path=person3 acquired[0m
+[0;32mI (286140) RTDB: Data with path=person3 acquired[0m
+[0;32mI (286550) RTDB: Data with path=person3 acquired[0m
+[0;32mI (287370) RTDB: Data with path=person3 acquired[0m
+[0;32mI (287780) RTDB: Data with path=person3 acquired[0m
+[0;32mI (288190) RTDB: Data with path=person3 acquired[0m
+[0;32mI (289010) RTDB: Data with path=person3 acquired[0m
+[0;32mI (290030) RTDB: Data with path=person3 acquired[0m
+[0;32mI (290440) RTDB: Data with path=person3 acquired[0m
+[0;32mI (290850) RTDB: Data with path=person3 acquired[0m
+[0;32mI (291260) RTDB: Data with path=person3 acquired[0m
+[0;32mI (291670) RTDB: Data with path=person3 acquired[0m
+[0;32mI (292080) RTDB: Data with path=person3 acquired[0m
+[0;32mI (292490) RTDB: Data with path=person3 acquired[0m
+[0;32mI (292900) RTDB: Data with path=person3 acquired[0m
+[0;32mI (293310) RTDB: Data with path=person3 acquired[0m
+[0;32mI (293720) RTDB: Data with path=person3 acquired[0m
+[0;32mI (294130) RTDB: Data with path=person3 acquired[0m
+[0;32mI (294540) RTDB: Data with path=person3 acquired[0m
+[0;32mI (294950) RTDB: Data with path=person3 acquired[0m
+[0;32mI (295360) RTDB: Data with path=person3 acquired[0m
+[0;32mI (295770) RTDB: Data with path=person3 acquired[0m
+[0;32mI (296590) RTDB: Data with path=person3 acquired[0m
+[0;32mI (296990) RTDB: Data with path=person3 acquired[0m
+[0;32mI (297410) RTDB: Data with path=person3 acquired[0m
+[0;32mI (297810) RTDB: Data with path=person3 acquired[0m
+[0;32mI (298220) RTDB: Data with path=person3 acquired[0m
+[0;32mI (298630) RTDB: Data with path=person3 acquired[0m
+[0;32mI (299040) RTDB: Data with path=person3 acquired[0m
+[0;32mI (299450) RTDB: Data with path=person3 acquired[0m
+[0;32mI (299860) RTDB: Data with path=person3 acquired[0m
+[0;32mI (300270) RTDB: Data with path=person3 acquired[0m
+[0;32mI (300680) RTDB: Data with path=person3 acquired[0m
+[0;32mI (301090) RTDB: Data with path=person3 acquired[0m
+[0;32mI (301500) RTDB: Data with path=person3 acquired[0m
+[0;32mI (301910) RTDB: Data with path=person3 acquired[0m
+[0;32mI (302730) RTDB: Data with path=person3 acquired[0m
+[0;32mI (303140) RTDB: Data with path=person3 acquired[0m
+[0;32mI (303550) RTDB: Data with path=person3 acquired[0m
+[0;32mI (303960) RTDB: Data with path=person3 acquired[0m
+[0;32mI (304370) RTDB: Data with path=person3 acquired[0m
+[0;32mI (304780) RTDB: Data with path=person3 acquired[0m
+[0;32mI (305600) RTDB: Data with path=person3 acquired[0m
+[0;32mI (306010) RTDB: Data with path=person3 acquired[0m
+[0;32mI (306420) RTDB: Data with path=person3 acquired[0m
+[0;32mI (306820) RTDB: Data with path=person3 acquired[0m
+[0;32mI (307230) RTDB: Data with path=person3 acquired[0m
+[0;32mI (307640) RTDB: Data with path=person3 acquired[0m
+[0;32mI (308060) RTDB: Data with path=person3 acquired[0m
+[0;32mI (308460) RTDB: Data with path=person3 acquired[0m
+[0;32mI (308870) RTDB: Data with path=person3 acquired[0m
+[0;32mI (309690) RTDB: Data with path=person3 acquired[0m
+[0;32mI (310100) RTDB: Data with path=person3 acquired[0m
+[0;32mI (310510) RTDB: Data with path=person3 acquired[0m
+[0;32mI (310920) RTDB: Data with path=person3 acquired[0m
+[0;32mI (311330) RTDB: Data with path=person3 acquired[0m
+[0;32mI (312150) RTDB: Data with path=person3 acquired[0m
+[0;32mI (312560) RTDB: Data with path=person3 acquired[0m
+[0;32mI (312970) RTDB: Data with path=person3 acquired[0m
+[0;32mI (313380) RTDB: Data with path=person3 acquired[0m
+[0;32mI (313790) RTDB: Data with path=person3 acquired[0m
+[0;32mI (314200) RTDB: Data with path=person3 acquired[0m
+[0;32mI (315020) RTDB: Data with path=person3 acquired[0m
+[0;32mI (315430) RTDB: Data with path=person3 acquired[0m
+[0;32mI (315840) RTDB: Data with path=person3 acquired[0m
+[0;32mI (316250) RTDB: Data with path=person3 acquired[0m
+[0;32mI (316660) RTDB: Data with path=person3 acquired[0m
+[0;32mI (317060) RTDB: Data with path=person3 acquired[0m
+[0;32mI (317480) RTDB: Data with path=person3 acquired[0m
+[0;32mI (317880) RTDB: Data with path=person3 acquired[0m
+[0;32mI (318290) RTDB: Data with path=person3 acquired[0m
+[0;32mI (318700) RTDB: Data with path=person3 acquired[0m
+[0;32mI (319120) RTDB: Data with path=person3 acquired[0m
+[0;32mI (319520) RTDB: Data with path=person3 acquired[0m
+[0;32mI (319930) RTDB: Data with path=person3 acquired[0m
+[0;32mI (320750) RTDB: Data with path=person3 acquired[0m
+[0;32mI (321160) RTDB: Data with path=person3 acquired[0m
+[0;32mI (321570) RTDB: Data with path=person3 acquired[0m
+[0;32mI (321980) RTDB: Data with path=person3 acquired[0m
+[0;32mI (322800) RTDB: Data with path=person3 acquired[0m
+[0;32mI (323820) RTDB: Data with path=person3 acquired[0m
+[0;32mI (324230) RTDB: Data with path=person3 acquired[0m
+[0;32mI (324640) RTDB: Data with path=person3 acquired[0m
+[0;32mI (325050) RTDB: Data with path=person3 acquired[0m
+[0;32mI (325460) RTDB: Data with path=person3 acquired[0m
+[0;32mI (325870) RTDB: Data with path=person3 acquired[0m
+[0;32mI (326280) RTDB: Data with path=person3 acquired[0m
+[0;32mI (326690) RTDB: Data with path=person3 acquired[0m
+[0;32mI (327100) RTDB: Data with path=person3 acquired[0m
+[0;32mI (327920) RTDB: Data with path=person3 acquired[0m
+[0;32mI (328330) RTDB: Data with path=person3 acquired[0m
+[0;32mI (328740) RTDB: Data with path=person3 acquired[0m
+[0;32mI (329150) RTDB: Data with path=person3 acquired[0m
+[0;32mI (329460) RTDB: Data with path=person3 acquired[0m
+[0;32mI (329870) RTDB: Data with path=person3 acquired[0m
+[0;32mI (330280) RTDB: Data with path=person3 acquired[0m
+[0;32mI (330690) RTDB: Data with path=person3 acquired[0m
+[0;32mI (331100) RTDB: Data with path=person3 acquired[0m
+[0;32mI (331500) RTDB: Data with path=person3 acquired[0m
+[0;32mI (331910) RTDB: Data with path=person3 acquired[0m
+[0;32mI (332330) RTDB: Data with path=person3 acquired[0m
+[0;32mI (334370) RTDB: Data with path=person3 acquired[0m
+[0;32mI (334780) RTDB: Data with path=person3 acquired[0m
+[0;32mI (335190) RTDB: Data with path=person3 acquired[0m
+[0;32mI (336010) RTDB: Data with path=person3 acquired[0m
+[0;32mI (336420) RTDB: Data with path=person3 acquired[0m
+[0;32mI (336830) RTDB: Data with path=person3 acquired[0m
+[0;32mI (337240) RTDB: Data with path=person3 acquired[0m
+[0;32mI (337650) RTDB: Data with path=person3 acquired[0m
+[0;32mI (338060) RTDB: Data with path=person3 acquired[0m
+[0;32mI (338470) RTDB: Data with path=person3 acquired[0m
+[0;32mI (338880) RTDB: Data with path=person3 acquired[0m
+[0;32mI (339290) RTDB: Data with path=person3 acquired[0m
+[0;32mI (339700) RTDB: Data with path=person3 acquired[0m
+[0;32mI (340110) RTDB: Data with path=person3 acquired[0m
+[0;32mI (340520) RTDB: Data with path=person3 acquired[0m
+[0;32mI (340930) RTDB: Data with path=person3 acquired[0m
+[0;32mI (341330) RTDB: Data with path=person3 acquired[0m
+[0;32mI (341740) RTDB: Data with path=person3 acquired[0m
+[0;32mI (342150) RTDB: Data with path=person3 acquired[0m
+[0;32mI (342570) RTDB: Data with path=person3 acquired[0m
+[0;32mI (342970) RTDB: Data with path=person3 acquired[0m
+[0;32mI (343380) RTDB: Data with path=person3 acquired[0m
+[0;32mI (343790) RTDB: Data with path=person3 acquired[0m
+[0;32mI (344610) RTDB: Data with path=person3 acquired[0m
+[0;32mI (345020) RTDB: Data with path=person3 acquired[0m
+[0;32mI (345430) RTDB: Data with path=person3 acquired[0m
+[0;32mI (346250) RTDB: Data with path=person3 acquired[0m
+[0;32mI (346660) RTDB: Data with path=person3 acquired[0m
+[0;32mI (347070) RTDB: Data with path=person3 acquired[0m
+[0;32mI (347480) RTDB: Data with path=person3 acquired[0m
+[0;32mI (348300) RTDB: Data with path=person3 acquired[0m
+[0;32mI (348710) RTDB: Data with path=person3 acquired[0m
+[0;32mI (349120) RTDB: Data with path=person3 acquired[0m
+[0;32mI (349530) RTDB: Data with path=person3 acquired[0m
+[0;32mI (349940) RTDB: Data with path=person3 acquired[0m
+[0;32mI (350350) RTDB: Data with path=person3 acquired[0m
+[0;32mI (350760) RTDB: Data with path=person3 acquired[0m
+[0;32mI (351170) RTDB: Data with path=person3 acquired[0m
+[0;32mI (351570) RTDB: Data with path=person3 acquired[0m
+[0;32mI (351990) RTDB: Data with path=person3 acquired[0m
+[0;32mI (352800) RTDB: Data with path=person3 acquired[0m
+[0;32mI (353210) RTDB: Data with path=person3 acquired[0m
+[0;32mI (354030) RTDB: Data with path=person3 acquired[0m
+[0;32mI (355060) RTDB: Data with path=person3 acquired[0m
+[0;32mI (356900) RTDB: Data with path=person3 acquired[0m
+[0;32mI (357310) RTDB: Data with path=person3 acquired[0m
+[0;32mI (357720) RTDB: Data with path=person3 acquired[0m
+[0;32mI (358540) RTDB: Data with path=person3 acquired[0m
+[0;32mI (358950) RTDB: Data with path=person3 acquired[0m
+[0;32mI (359360) RTDB: Data with path=person3 acquired[0m
+[0;32mI (359770) RTDB: Data with path=person3 acquired[0m
+[0;32mI (360180) RTDB: Data with path=person3 acquired[0m
+[0;32mI (360590) RTDB: Data with path=person3 acquired[0m
+[0;32mI (361200) RTDB: Data with path=person3 acquired[0m
+[0;32mI (361610) RTDB: Data with path=person3 acquired[0m
+[0;32mI (362020) RTDB: Data with path=person3 acquired[0m
+[0;32mI (362430) RTDB: Data with path=person3 acquired[0m
+[0;32mI (362840) RTDB: Data with path=person3 acquired[0m
+[0;32mI (363660) RTDB: Data with path=person3 acquired[0m
+[0;32mI (364680) RTDB: Data with path=person3 acquired[0m
+[0;32mI (366530) RTDB: Data with path=person3 acquired[0m
+[0;32mI (366940) RTDB: Data with path=person3 acquired[0m
+[0;32mI (367350) RTDB: Data with path=person3 acquired[0m
+[0;32mI (367750) RTDB: Data with path=person3 acquired[0m
+[0;32mI (368160) RTDB: Data with path=person3 acquired[0m
+[0;32mI (368570) RTDB: Data with path=person3 acquired[0m
+[0;32mI (368980) RTDB: Data with path=person3 acquired[0m
+[0;32mI (369390) RTDB: Data with path=person3 acquired[0m
+[0;32mI (369800) RTDB: Data with path=person3 acquired[0m
+[0;32mI (370210) RTDB: Data with path=person3 acquired[0m
+[0;32mI (370620) RTDB: Data with path=person3 acquired[0m
+[0;32mI (371030) RTDB: Data with path=person3 acquired[0m
+[0;32mI (371440) RTDB: Data with path=person3 acquired[0m
+[0;32mI (371850) RTDB: Data with path=person3 acquired[0m
+[0;32mI (372260) RTDB: Data with path=person3 acquired[0m
+[0;32mI (372670) RTDB: Data with path=person3 acquired[0m
+[0;32mI (373080) RTDB: Data with path=person3 acquired[0m
+[0;32mI (373490) RTDB: Data with path=person3 acquired[0m
+[0;32mI (373900) RTDB: Data with path=person3 acquired[0m
+[0;32mI (374310) RTDB: Data with path=person3 acquired[0m
+[0;32mI (374720) RTDB: Data with path=person3 acquired[0m
+[0;32mI (375130) RTDB: Data with path=person3 acquired[0m
+[0;32mI (375540) RTDB: Data with path=person3 acquired[0m
+[0;32mI (375950) RTDB: Data with path=person3 acquired[0m
+[0;32mI (376360) RTDB: Data with path=person3 acquired[0m
+[0;32mI (376770) RTDB: Data with path=person3 acquired[0m
+[0;32mI (377170) RTDB: Data with path=person3 acquired[0m
+[0;32mI (377590) RTDB: Data with path=person3 acquired[0m
+[0;32mI (377990) RTDB: Data with path=person3 acquired[0m
+[0;32mI (378400) RTDB: Data with path=person3 acquired[0m
+[0;32mI (378810) RTDB: Data with path=person3 acquired[0m
+[0;32mI (379220) RTDB: Data with path=person3 acquired[0m
+[0;32mI (379630) RTDB: Data with path=person3 acquired[0m
+[0;32mI (380040) RTDB: Data with path=person3 acquired[0m
+[0;32mI (380450) RTDB: Data with path=person3 acquired[0m
+[0;32mI (380860) RTDB: Data with path=person3 acquired[0m
+[0;32mI (381270) RTDB: Data with path=person3 acquired[0m
+[0;32mI (381680) RTDB: Data with path=person3 acquired[0m
+[0;32mI (382090) RTDB: Data with path=person3 acquired[0m
+[0;32mI (382510) RTDB: Data with path=person3 acquired[0m
+[0;32mI (384340) RTDB: Data with path=person3 acquired[0m
+[0;32mI (384750) RTDB: Data with path=person3 acquired[0m
+[0;32mI (385160) RTDB: Data with path=person3 acquired[0m
+[0;32mI (385580) RTDB: Data with path=person3 acquired[0m
+[0;32mI (385990) RTDB: Data with path=person3 acquired[0m
+[0;32mI (386390) RTDB: Data with path=person3 acquired[0m
+[0;32mI (386840) RTDB: Data with path=person3 acquired[0m
+[0;32mI (387210) RTDB: Data with path=person3 acquired[0m
+[0;32mI (387620) RTDB: Data with path=person3 acquired[0m
+[0;32mI (388030) RTDB: Data with path=person3 acquired[0m
+[0;32mI (388440) RTDB: Data with path=person3 acquired[0m
+[0;32mI (388850) RTDB: Data with path=person3 acquired[0m
+[0;32mI (389260) RTDB: Data with path=person3 acquired[0m
+[0;32mI (389670) RTDB: Data with path=person3 acquired[0m
+[0;32mI (390080) RTDB: Data with path=person3 acquired[0m
+[0;32mI (390490) RTDB: Data with path=person3 acquired[0m
+[0;32mI (391920) RTDB: Data with path=person3 acquired[0m
+[0;32mI (392330) RTDB: Data with path=person3 acquired[0m
+[0;32mI (392740) RTDB: Data with path=person3 acquired[0m
+[0;32mI (393150) RTDB: Data with path=person3 acquired[0m
+[0;32mI (393560) RTDB: Data with path=person3 acquired[0m
+[0;32mI (393970) RTDB: Data with path=person3 acquired[0m
+[0;32mI (394380) RTDB: Data with path=person3 acquired[0m
+[0;32mI (394790) RTDB: Data with path=person3 acquired[0m
+[0;32mI (395200) RTDB: Data with path=person3 acquired[0m
+[0;32mI (395610) RTDB: Data with path=person3 acquired[0m
+[0;32mI (396020) RTDB: Data with path=person3 acquired[0m
+[0;32mI (396430) RTDB: Data with path=person3 acquired[0m
+[0;32mI (396830) RTDB: Data with path=person3 acquired[0m
+[0;32mI (397250) RTDB: Data with path=person3 acquired[0m
+[0;32mI (397650) RTDB: Data with path=person3 acquired[0m
+[0;32mI (398070) RTDB: Data with path=person3 acquired[0m
+[0;32mI (398470) RTDB: Data with path=person3 acquired[0m
+[0;32mI (399090) RTDB: Data with path=person3 acquired[0m
+[0;32mI (399500) RTDB: Data with path=person3 acquired[0m
+[0;32mI (399910) RTDB: Data with path=person3 acquired[0m
+[0;32mI (400320) RTDB: Data with path=person3 acquired[0m
+[0;32mI (400730) RTDB: Data with path=person3 acquired[0m
+[0;32mI (401140) RTDB: Data with path=person3 acquired[0m
+[0;32mI (401550) RTDB: Data with path=person3 acquired[0m
+[0;32mI (401950) RTDB: Data with path=person3 acquired[0m
+[0;32mI (402370) RTDB: Data with path=person3 acquired[0m
+[0;32mI (402770) RTDB: Data with path=person3 acquired[0m
+[0;32mI (403190) RTDB: Data with path=person3 acquired[0m
+[0;32mI (403590) RTDB: Data with path=person3 acquired[0m
+[0;32mI (404000) RTDB: Data with path=person3 acquired[0m
+[0;32mI (404410) RTDB: Data with path=person3 acquired[0m
+[0;32mI (404820) RTDB: Data with path=person3 acquired[0m
+[0;32mI (405230) RTDB: Data with path=person3 acquired[0m
+[0;32mI (405640) RTDB: Data with path=person3 acquired[0m
+[0;32mI (406050) RTDB: Data with path=person3 acquired[0m
+[0;32mI (406460) RTDB: Data with path=person3 acquired[0m
+[0;32mI (406870) RTDB: Data with path=person3 acquired[0m
+[0;32mI (407280) RTDB: Data with path=person3 acquired[0m
+[0;32mI (407690) RTDB: Data with path=person3 acquired[0m
+[0;32mI (408100) RTDB: Data with path=person3 acquired[0m
+[0;32mI (408510) RTDB: Data with path=person3 acquired[0m
+[0;32mI (408920) RTDB: Data with path=person3 acquired[0m
+[0;32mI (409330) RTDB: Data with path=person3 acquired[0m
+[0;32mI (409740) RTDB: Data with path=person3 acquired[0m
+[0;32mI (410150) RTDB: Data with path=person3 acquired[0m
+[0;32mI (410560) RTDB: Data with path=person3 acquired[0m
+[0;32mI (410970) RTDB: Data with path=person3 acquired[0m
+[0;32mI (411380) RTDB: Data with path=person3 acquired[0m
+[0;32mI (411790) RTDB: Data with path=person3 acquired[0m
+[0;32mI (412200) RTDB: Data with path=person3 acquired[0m
+[0;32mI (412600) RTDB: Data with path=person3 acquired[0m
+[0;32mI (413020) RTDB: Data with path=person3 acquired[0m
+[0;32mI (413420) RTDB: Data with path=person3 acquired[0m
+[0;32mI (413830) RTDB: Data with path=person3 acquired[0m
+[0;32mI (414240) RTDB: Data with path=person3 acquired[0m
+[0;32mI (414650) RTDB: Data with path=person3 acquired[0m
+[0;32mI (415060) RTDB: Data with path=person3 acquired[0m
+[0;32mI (415470) RTDB: Data with path=person3 acquired[0m
+[0;32mI (415880) RTDB: Data with path=person3 acquired[0m
+[0;32mI (416290) RTDB: Data with path=person3 acquired[0m
+[0;32mI (416700) RTDB: Data with path=person3 acquired[0m
+[0;32mI (417110) RTDB: Data with path=person3 acquired[0m
+[0;32mI (417520) RTDB: Data with path=person3 acquired[0m
+[0;32mI (417930) RTDB: Data with path=person3 acquired[0m
+[0;32mI (418340) RTDB: Data with path=person3 acquired[0m
+[0;32mI (418750) RTDB: Data with path=person3 acquired[0m
+[0;32mI (419160) RTDB: Data with path=person3 acquired[0m
+[0;32mI (419570) RTDB: Data with path=person3 acquired[0m
+[0;32mI (419980) RTDB: Data with path=person3 acquired[0m
+[0;32mI (420390) RTDB: Data with path=person3 acquired[0m
+[0;32mI (420800) RTDB: Data with path=person3 acquired[0m
+[0;32mI (421210) RTDB: Data with path=person3 acquired[0m
+[0;32mI (421620) RTDB: Data with path=person3 acquired[0m
+[0;32mI (422030) RTDB: Data with path=person3 acquired[0m
+[0;32mI (422440) RTDB: Data with path=person3 acquired[0m
+[0;32mI (422850) RTDB: Data with path=person3 acquired[0m
+[0;32mI (423250) RTDB: Data with path=person3 acquired[0m
+[0;32mI (423660) RTDB: Data with path=person3 acquired[0m
+[0;32mI (424070) RTDB: Data with path=person3 acquired[0m
+[0;32mI (424490) RTDB: Data with path=person3 acquired[0m
+[0;32mI (424890) RTDB: Data with path=person3 acquired[0m
+[0;32mI (425300) RTDB: Data with path=person3 acquired[0m
+[0;32mI (425760) RTDB: Data with path=person3 acquired[0m
+[0;32mI (426130) RTDB: Data with path=person3 acquired[0m
+[0;32mI (427970) RTDB: Data with path=person3 acquired[0m
+[0;32mI (428380) RTDB: Data with path=person3 acquired[0m
+[0;32mI (428780) RTDB: Data with path=person3 acquired[0m
+[0;32mI (429190) RTDB: Data with path=person3 acquired[0m
+[0;32mI (429600) RTDB: Data with path=person3 acquired[0m
+[0;32mI (430010) RTDB: Data with path=person3 acquired[0m
+[0;32mI (430420) RTDB: Data with path=person3 acquired[0m
+[0;32mI (430830) RTDB: Data with path=person3 acquired[0m
+[0;32mI (431240) RTDB: Data with path=person3 acquired[0m
+[0;32mI (431650) RTDB: Data with path=person3 acquired[0m
+[0;32mI (432160) RTDB: Data with path=person3 acquired[0m
+[0;32mI (432780) RTDB: Data with path=person3 acquired[0m
+[0;32mI (433390) RTDB: Data with path=person3 acquired[0m
+[0;32mI (434010) RTDB: Data with path=person3 acquired[0m
+[0;32mI (434520) RTDB: Data with path=person3 acquired[0m
+[0;32mI (434930) RTDB: Data with path=person3 acquired[0m
+[0;32mI (435340) RTDB: Data with path=person3 acquired[0m
+[0;32mI (435750) RTDB: Data with path=person3 acquired[0m
+[0;32mI (436160) RTDB: Data with path=person3 acquired[0m
+[0;32mI (436570) RTDB: Data with path=person3 acquired[0m
+[0;32mI (436980) RTDB: Data with path=person3 acquired[0m
+[0;32mI (437390) RTDB: Data with path=person3 acquired[0m
+[0;32mI (437800) RTDB: Data with path=person3 acquired[0m
+[0;32mI (438210) RTDB: Data with path=person3 acquired[0m
+[0;32mI (438610) RTDB: Data with path=person3 acquired[0m
+[0;32mI (439020) RTDB: Data with path=person3 acquired[0m
+[0;32mI (439430) RTDB: Data with path=person3 acquired[0m
+[0;32mI (439840) RTDB: Data with path=person3 acquired[0m
+[0;32mI (440250) RTDB: Data with path=person3 acquired[0m
+[0;32mI (440660) RTDB: Data with path=person3 acquired[0m
+[0;32mI (441070) RTDB: Data with path=person3 acquired[0m
+[0;32mI (441480) RTDB: Data with path=person3 acquired[0m
+[0;32mI (441890) RTDB: Data with path=person3 acquired[0m
+[0;32mI (442300) RTDB: Data with path=person3 acquired[0m
+[0;32mI (442710) RTDB: Data with path=person3 acquired[0m
+[0;32mI (443120) RTDB: Data with path=person3 acquired[0m
+[0;32mI (443530) RTDB: Data with path=person3 acquired[0m
+[0;32mI (443940) RTDB: Data with path=person3 acquired[0m
+[0;32mI (444350) RTDB: Data with path=person3 acquired[0m
+[0;32mI (444760) RTDB: Data with path=person3 acquired[0m
+[0;32mI (445170) RTDB: Data with path=person3 acquired[0m
+[0;32mI (445580) RTDB: Data with path=person3 acquired[0m
+[0;32mI (445990) RTDB: Data with path=person3 acquired[0m
+[0;32mI (446400) RTDB: Data with path=person3 acquired[0m
+[0;32mI (446810) RTDB: Data with path=person3 acquired[0m
+[0;32mI (447220) RTDB: Data with path=person3 acquired[0m
+[0;32mI (447630) RTDB: Data with path=person3 acquired[0m
+[0;32mI (448040) RTDB: Data with path=person3 acquired[0m
+[0;32mI (448450) RTDB: Data with path=person3 acquired[0m
+[0;32mI (448850) RTDB: Data with path=person3 acquired[0m
+[0;32mI (449260) RTDB: Data with path=person3 acquired[0m
+[0;32mI (449670) RTDB: Data with path=person3 acquired[0m
+[0;32mI (450080) RTDB: Data with path=person3 acquired[0m
+[0;32mI (450490) RTDB: Data with path=person3 acquired[0m
+[0;32mI (450900) RTDB: Data with path=person3 acquired[0m
+[0;32mI (451310) RTDB: Data with path=person3 acquired[0m
+[0;32mI (451720) RTDB: Data with path=person3 acquired[0m
+[0;32mI (452130) RTDB: Data with path=person3 acquired[0m
+[0;32mI (452540) RTDB: Data with path=person3 acquired[0m
+[0;32mI (452950) RTDB: Data with path=person3 acquired[0m
+[0;32mI (453360) RTDB: Data with path=person3 acquired[0m
+[0;32mI (453770) RTDB: Data with path=person3 acquired[0m
+[0;32mI (454180) RTDB: Data with path=person3 acquired[0m
+[0;32mI (454590) RTDB: Data with path=person3 acquired[0m
+[0;32mI (455000) RTDB: Data with path=person3 acquired[0m
+[0;32mI (455410) RTDB: Data with path=person3 acquired[0m
+[0;32mI (455820) RTDB: Data with path=person3 acquired[0m
+[0;32mI (456630) RTDB: Data with path=person3 acquired[0m
+[0;32mI (457050) RTDB: Data with path=person3 acquired[0m
+[0;32mI (457460) RTDB: Data with path=person3 acquired[0m
+[0;32mI (457870) RTDB: Data with path=person3 acquired[0m
+[0;32mI (458280) RTDB: Data with path=person3 acquired[0m
+[0;32mI (458690) RTDB: Data with path=person3 acquired[0m
+[0;32mI (459090) RTDB: Data with path=person3 acquired[0m
+[0;32mI (459500) RTDB: Data with path=person3 acquired[0m
+[0;32mI (459910) RTDB: Data with path=person3 acquired[0m
+[0;32mI (460320) RTDB: Data with path=person3 acquired[0m
+[0;32mI (460730) RTDB: Data with path=person3 acquired[0m
+[0;32mI (461140) RTDB: Data with path=person3 acquired[0m
+[0;32mI (461550) RTDB: Data with path=person3 acquired[0m
+[0;32mI (461960) RTDB: Data with path=person3 acquired[0m
+[0;32mI (462370) RTDB: Data with path=person3 acquired[0m
+[0;32mI (462780) RTDB: Data with path=person3 acquired[0m
+[0;32mI (463190) RTDB: Data with path=person3 acquired[0m
+[0;32mI (463600) RTDB: Data with path=person3 acquired[0m
+[0;32mI (464010) RTDB: Data with path=person3 acquired[0m
+[0;32mI (464420) RTDB: Data with path=person3 acquired[0m
+[0;32mI (464830) RTDB: Data with path=person3 acquired[0m
+[0;32mI (465240) RTDB: Data with path=person3 acquired[0m
+[0;32mI (465650) RTDB: Data with path=person3 acquired[0m
+[0;32mI (466060) RTDB: Data with path=person3 acquired[0m
+[0;32mI (466470) RTDB: Data with path=person3 acquired[0m
+[0;32mI (466880) RTDB: Data with path=person3 acquired[0m
+[0;32mI (467290) RTDB: Data with path=person3 acquired[0m
+[0;32mI (467700) RTDB: Data with path=person3 acquired[0m
+[0;32mI (468110) RTDB: Data with path=person3 acquired[0m
+[0;32mI (468520) RTDB: Data with path=person3 acquired[0m
+[0;32mI (468930) RTDB: Data with path=person3 acquired[0m
+[0;32mI (469330) RTDB: Data with path=person3 acquired[0m
+[0;32mI (469750) RTDB: Data with path=person3 acquired[0m
+[0;32mI (471590) RTDB: Data with path=person3 acquired[0m
+[0;32mI (472000) RTDB: Data with path=person3 acquired[0m
+[0;32mI (472410) RTDB: Data with path=person3 acquired[0m
+[0;32mI (472820) RTDB: Data with path=person3 acquired[0m
+[0;32mI (473230) RTDB: Data with path=person3 acquired[0m
+[0;32mI (473630) RTDB: Data with path=person3 acquired[0m
+[0;32mI (474040) RTDB: Data with path=person3 acquired[0m
+[0;32mI (474460) RTDB: Data with path=person3 acquired[0m
+[0;32mI (474860) RTDB: Data with path=person3 acquired[0m
+[0;32mI (475270) RTDB: Data with path=person3 acquired[0m
+[0;32mI (475680) RTDB: Data with path=person3 acquired[0m
+[0;32mI (476090) RTDB: Data with path=person3 acquired[0m
+[0;32mI (476500) RTDB: Data with path=person3 acquired[0m
+[0;32mI (476910) RTDB: Data with path=person3 acquired[0m
+[0;32mI (478350) RTDB: Data with path=person3 acquired[0m
+[0;32mI (478760) RTDB: Data with path=person3 acquired[0m
+[0;32mI (479170) RTDB: Data with path=person3 acquired[0m
+[0;32mI (479570) RTDB: Data with path=person3 acquired[0m
+[0;32mI (479980) RTDB: Data with path=person3 acquired[0m
+[0;32mI (480400) RTDB: Data with path=person3 acquired[0m
+[0;32mI (480810) RTDB: Data with path=person3 acquired[0m
+[0;32mI (481220) RTDB: Data with path=person3 acquired[0m
+[0;32mI (481620) RTDB: Data with path=person3 acquired[0m
+[0;32mI (482030) RTDB: Data with path=person3 acquired[0m
+[0;32mI (482440) RTDB: Data with path=person3 acquired[0m
+[0;32mI (482850) RTDB: Data with path=person3 acquired[0m
+[0;32mI (483260) RTDB: Data with path=person3 acquired[0m
+[0;32mI (483670) RTDB: Data with path=person3 acquired[0m
+[0;32mI (484490) RTDB: Data with path=person3 acquired[0m
+[0;32mI (484900) RTDB: Data with path=person3 acquired[0m
+[0;32mI (485310) RTDB: Data with path=person3 acquired[0m
+[0;32mI (485720) RTDB: Data with path=person3 acquired[0m
+[0;32mI (486130) RTDB: Data with path=person3 acquired[0m
+[0;32mI (486540) RTDB: Data with path=person3 acquired[0m
+[0;32mI (486950) RTDB: Data with path=person3 acquired[0m
+[0;32mI (487360) RTDB: Data with path=person3 acquired[0m
+[0;32mI (487770) RTDB: Data with path=person3 acquired[0m
+[0;32mI (488180) RTDB: Data with path=person3 acquired[0m
+[0;32mI (488590) RTDB: Data with path=person3 acquired[0m
+[0;32mI (489000) RTDB: Data with path=person3 acquired[0m
+[0;32mI (489820) RTDB: Data with path=person3 acquired[0m
+[0;32mI (490220) RTDB: Data with path=person3 acquired[0m
+[0;32mI (491040) RTDB: Data with path=person3 acquired[0m
+[0;32mI (491450) RTDB: Data with path=person3 acquired[0m
+[0;32mI (492270) RTDB: Data with path=person3 acquired[0m
+[0;32mI (492680) RTDB: Data with path=person3 acquired[0m
+[0;32mI (493090) RTDB: Data with path=person3 acquired[0m
+[0;32mI (493500) RTDB: Data with path=person3 acquired[0m
+[0;32mI (493910) RTDB: Data with path=person3 acquired[0m
+[0;32mI (494320) RTDB: Data with path=person3 acquired[0m
+[0;32mI (494730) RTDB: Data with path=person3 acquired[0m
+[0;32mI (495140) RTDB: Data with path=person3 acquired[0m
+[0;32mI (495550) RTDB: Data with path=person3 acquired[0m
+[0;32mI (496370) RTDB: Data with path=person3 acquired[0m
+[0;32mI (496780) RTDB: Data with path=person3 acquired[0m
+[0;32mI (497190) RTDB: Data with path=person3 acquired[0m
+[0;32mI (497600) RTDB: Data with path=person3 acquired[0m
+[0;32mI (498010) RTDB: Data with path=person3 acquired[0m
+[0;32mI (498420) RTDB: Data with path=person3 acquired[0m
+[0;32mI (498830) RTDB: Data with path=person3 acquired[0m
+[0;32mI (499230) RTDB: Data with path=person3 acquired[0m
+[0;32mI (499640) RTDB: Data with path=person3 acquired[0m
+[0;32mI (500050) RTDB: Data with path=person3 acquired[0m
+[0;32mI (500470) RTDB: Data with path=person3 acquired[0m
+[0;32mI (500870) RTDB: Data with path=person3 acquired[0m
+[0;32mI (501280) RTDB: Data with path=person3 acquired[0m
+[0;32mI (501690) RTDB: Data with path=person3 acquired[0m
+[0;32mI (502100) RTDB: Data with path=person3 acquired[0m
+[0;32mI (502510) RTDB: Data with path=person3 acquired[0m
+[0;32mI (502920) RTDB: Data with path=person3 acquired[0m
+[0;32mI (503740) RTDB: Data with path=person3 acquired[0m
+[0;32mI (504150) RTDB: Data with path=person3 acquired[0m
+[0;32mI (504560) RTDB: Data with path=person3 acquired[0m
+[0;32mI (504970) RTDB: Data with path=person3 acquired[0m
+[0;32mI (505380) RTDB: Data with path=person3 acquired[0m
+[0;32mI (506200) RTDB: Data with path=person3 acquired[0m
+[0;32mI (506610) RTDB: Data with path=person3 acquired[0m
+[0;32mI (507020) RTDB: Data with path=person3 acquired[0m
+[0;32mI (507430) RTDB: Data with path=person3 acquired[0m
+[0;32mI (507840) RTDB: Data with path=person3 acquired[0m
+[0;32mI (508250) RTDB: Data with path=person3 acquired[0m
+[0;32mI (508660) RTDB: Data with path=person3 acquired[0m
+[0;32mI (509060) RTDB: Data with path=person3 acquired[0m
+[0;32mI (509480) RTDB: Data with path=person3 acquired[0m

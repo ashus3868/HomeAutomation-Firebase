@@ -1,0 +1,11 @@
+[0;33m--- esp-idf-monitor 1.3.2 on /dev/cu.usbserial-A50285BI 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m0x40084f6c: _xt_panic at /Users/ashishsaini/esp/esp-idf/components/esp_system/port/arch/xtensa/panic_handler_asm.S:30
+[0m
+[0;33m0x40080083: _WindowOverflow8 at /Users/ashishsaini/esp/esp-idf/components/xtensa/xtensa_vectors.S:2098
+[0m
+[0;33m0x400811c4: call_start_cpu1 at /Users/ashishsaini/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0m
