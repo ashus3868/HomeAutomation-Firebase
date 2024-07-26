@@ -31,23 +31,11 @@ extern "C" void app_main(void)
     gpio_set_direction(GPIO_NUM_25, GPIO_MODE_OUTPUT);
     gpio_set_direction(GPIO_NUM_26, GPIO_MODE_OUTPUT);
     
-    // gpio_set_level(GPIO_NUM_32,1);
-    // vTaskDelay(100);
-    // gpio_set_level(GPIO_NUM_32,0);
-    // vTaskDelay(100);
-    // gpio_set_level(GPIO_NUM_33,1);
-    // vTaskDelay(100);
-    // gpio_set_level(GPIO_NUM_33,0);
-    // vTaskDelay(100);
-    // gpio_set_level(GPIO_NUM_25,1);
-    // vTaskDelay(100);
-    // gpio_set_level(GPIO_NUM_25,0);
-    // vTaskDelay(100);
-    // gpio_set_level(GPIO_NUM_26,1);
-    // vTaskDelay(100);
-    // gpio_set_level(GPIO_NUM_26,0);
-    // vTaskDelay(100);
-
+    gpio_set_level(GPIO_NUM_32,1);
+    gpio_set_level(GPIO_NUM_33,1);
+    gpio_set_level(GPIO_NUM_25,1);
+    gpio_set_level(GPIO_NUM_26,1);
+    
     wifiInit(SSID, PASSWORD);  // blocking until it connects
 
     // Config and Authentication
@@ -59,37 +47,7 @@ extern "C" void app_main(void)
 
     RTDB db = RTDB(&app, DATABASE_URL);
 
-    
 
-    // R"()" allow us to write string as they are without escaping the characters with backslash
-
-    // We can put a json str directly at /person1
-    // std::string json_str = R"({"name": "Ashish Saini", "age": 28, "random_float": 8.56})";
-    // db.putData("/person1", json_str.c_str()); 
-    // // vTaskDelay(500/portTICK_PERIOD_MS);
-
-    // // We can parse the json_str and access the members and edit them
-    // Json::Value data;
-    // Json::Reader reader; 
-    // reader.parse(json_str, data);
-
-    // std::string madjid_name = data["name"].asString();  // convert value to primitives (read jsoncpp docs for more of these)
-
-    // // ESP_LOGI("MAIN", "name: %s", madjid_name.c_str());   
-
-    // data["name"] = "Innovate Yourself";
-
-    // // ESP_LOGI("MAIN", "edited name from %s to: %s", madjid_name.c_str(), data["name"].asString().c_str());   
-
-    // data["age"] = 25;
-    // data["random_float"] = 4.44;
-    
-    // // put json object directly
-    // db.putData("/person2", data);   
-
-    // // Edit person2 data in the database by patching
-    // data["age"] = 26;
-    // db.patchData("person2", data);
 
     // vTaskDelay(500/portTICK_PERIOD_MS);
     // Construct a new json object manually
@@ -198,11 +156,6 @@ extern "C" void app_main(void)
     
 
     }
-
-
-    // db.deleteData("person3"); // delete person3
-    // root = db.getData("person3"); // retrieve person3 from database, this time it will be null because person3 doesnt exist in database
-    // std::cout << root << std::endl;
 
 }
 
